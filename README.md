@@ -1,3 +1,3 @@
 # LeetCode
 
-## LeetCode题目的题解
+## The code answers of leetcode.com
