@@ -26,7 +26,7 @@ public class Pf1004
 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        while (scan.hasNextLine()){
+        while (scan.hasNextInt()){
         int x = scan.nextInt();
         int y = scan.nextInt();
         int[][] list = new int[x][y];
