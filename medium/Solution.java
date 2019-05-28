@@ -5,6 +5,9 @@ class Solution {
         int mid;
         while (left <= right) {
             mid = (left + right) / 2;
+            System.out.println(left);
+            System.out.println(mid);
+            System.out.println(right);
             if (nums[mid] == target) {
                 return mid;
             }
@@ -23,5 +26,11 @@ class Solution {
             }
         }
         return -1;
-}
+    }
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[] list = {4, 5, 1, 2, 3};
+        int localtion = s.search(list, 5);
+        System.out.println(localtion);
+    }
 }
