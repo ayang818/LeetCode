@@ -1,49 +1,43 @@
-import javax.swing.text.html.parser.TagElement;
-
-// 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
-
-// 返回被除数 dividend 除以除数 divisor 得到的商。
-
-// 示例 1:
-
-// 输入: dividend = 10, divisor = 3
-// 输出: 3
-// 示例 2:
-
-// 输入: dividend = 7, divisor = -3
-// 输出: -2
-// 说明:
-
-// 被除数和除数均为 32 位有符号整数。
-// 除数不为 0。
-// 假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。本题中，如果除法结果溢出，则返回 231 − 1。
-
 class Solution {
     public int divide(int dividend, int divisor) {
-        if (divisor<0) divisor = -divisor;
-        if (dividend < 0 ) dividend=-dividend;
-        int left = 0;
-        int right = dividend;
-        int mid=0;
-        while(left<=right) {
-            mid = (left + right) / 2;
-            if (mid*divisor == dividend || (mid*divisor <= dividend && (mid+1)*divisor >= dividend) ) {
-                return mid;
-            }
+        if (divisor==0)
+            return -1;
+        if (dividend==0)
+            return 0;
+        if (divisor == 1)
+            return dividend;
+        if (dividend==Integer.MIN_VALUE && divisor==-1)
+            return Integer.MAX_VALUE;
 
-            if (mid*divisor < dividend) {
-                left = mid + 1;
+        /** 符号位的处理参考了大佬的异或处理方法*/
+
+        boolean negetive= (dividend^ divisor)<0;
+        int res=0, div_count=1;
+        long dividend_tmp= Math.abs((long)dividend);
+        long divisor_tmp= Math.abs((long)divisor);
+        
+        while (dividend_tmp>= divisor_tmp) {
+            // 题目不让使用乘除取模运算符
+            dividend_tmp -= divisor_tmp;
+            res += div_count;
+            
+            if (dividend_tmp< Math.abs(divisor))
+                break;
+            
+            if (dividend_tmp- divisor_tmp< divisor_tmp) {
+                divisor_tmp= Math.abs(divisor);
+                div_count=1;
+                continue;
             }
-            if (mid*divisor > dividend) {
-                right = mid - 1;
-            }
+            divisor_tmp+= divisor_tmp;
+            div_count+= div_count;
         }
-        return mid;
+
+        return negetive? 0-res: res;
     }
     public static void main(String[] args) {
-        Solution s  = new Solution();
-        int res;
-        res = s.divide(10, 7);
-        System.out.println(res);
+        Solution s= new Solution();
+        int ans = s.divide(Integer.MIN_VALUE, 1);
+        System.out.println(ans);
     }
 }
