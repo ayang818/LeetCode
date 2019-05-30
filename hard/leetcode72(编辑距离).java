@@ -1,39 +1,19 @@
 class Solution {
     public int minDistance(String word1, String word2) {
-        int m = word1.length();
-        int n = word2.length();
-        if (m == 0 && n != 0) return n;
-        if (m != 0 && n == 0) return m;
+        int n1 = word1.length();
+        int n2 = word2.length();
+        int[][] dp = new int[n1 + 1][n2 + 1];
+        // 第一行
+        for (int j = 1; j <= n2; j++) dp[0][j] = dp[0][j - 1] + 1;
+        // 第一列
+        for (int i = 1; i <= n1; i++) dp[i][0] = dp[i - 1][0] + 1;
 
-        // 准备dp矩阵
-        int[][] martix = new int[m+1][n+1];
-        for (int i = 0; i <= m; i++) {
-            martix[i][0] = i; 
-        } 
-        for (int i = 0; i <= n; i++) {
-            martix[0][i] = i;
-        }
-        
-        for (int i = 1; i <= m; i++) {
-            char tempChar1 = word1.charAt(i-1);
-            int cost = 0;
-            for (int j = 1; j <= n; j++) {
-                char tempChar2 = word2.charAt(j-1);
-                if (tempChar1 == tempChar2) {
-                    cost = 0;
-                } else {
-                    cost = 1;
-                }
-                int  valueAbove = martix[i-1][j] + 1;
-                int  valueLeft = martix[i][j-1] + 1;
-                int  valueDiag = martix[i - 1][j - 1] + cost;
-                
-                int cellValue = valueAbove < valueLeft ? (valueDiag < valueAbove ? valueDiag : valueAbove) : (valueDiag < valueLeft ? valueDiag : valueLeft);
-                martix[i][j] = cellValue;
+        for (int i = 1; i <= n1; i++) {
+            for (int j = 1; j <= n2; j++) {
+                if (word1.charAt(i - 1) == word2.charAt(j - 1)) dp[i][j] = dp[i - 1][j - 1];
+                else dp[i][j] = Math.min(Math.min(dp[i - 1][j - 1], dp[i][j - 1]), dp[i - 1][j]) + 1;
             }
         }
-        int distance = martix[m][n];
-
-        return distance;
+        return dp[n1][n2];  
     }
 }
