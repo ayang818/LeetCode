@@ -18,9 +18,10 @@ class Solution {
         }
         // 设置初始值
         String ansString = s.substring(0,1);
-        for (i=0; i<s.length(); i++) {
+        int length = s.length();
+        for (i=0; i<length; i++) {
             // 按奇数长度拓展
-            for (j=0; (i-j) > 0 && (i+j+1) < s.length(); j++) {
+            for (j=0; (i-j) > 0 && (i+j+1) < length; j++) {
                 if(s.charAt(i-j-1) != s.charAt(i+j+1)) {
                     break;
                 }    
@@ -38,10 +39,9 @@ class Solution {
                 }           
                 temp = j*2+2;                
             }
-            System.out.println(i+" "+j);
             if (temp > maxNum) {
+                // 推导得j需要减一
                 j-=1;
-                System.out.println(i+" "+j);
                 maxNum = temp;
                 ansString = s.substring(i-j, i-j+maxNum);  
             }
