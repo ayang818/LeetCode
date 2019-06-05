@@ -11,40 +11,48 @@
 // 输出: "bb"
 class Solution {
     public String longestPalindrome(String s) {
-        String ansString = new String("");
-        int maxNum = 0, temp = 0 , i,j;
-        for (i=1; i < s.length(); i++) {
-            for (j=1; (i-j) > 0 && (i+j) < s.length(); j++) {
-                if(s.charAt(i-j) != s.charAt(i+j)) {
+        int maxNum = 1, temp = 1, i,j;
+        boolean flag = false;
+        if (s.length() == 0) {
+            return "";
+        }
+        if (s.length() == 1) {
+            return s;
+        }
+        String ansString = s.substring(0,1);
+        for (i=0; i<s.length(); i++) {
+            for (j=0; (i-j) > 0 && (i+j+1) < s.length(); j++) {
+                if(s.charAt(i-j-1) != s.charAt(i+j+1)) {
+                    flag = true;
                     break;
                 }    
-                temp = j*2+1;
+                temp = (j+1)*2+1;
             }
-            if (temp > maxNum) {
+            if (temp > maxNum && i != 0) {
+                j-=1;
                 maxNum = temp;
-                ansString = s.substring(i-j, i-j+maxNum);
-                // System.out.println(ansString);
+                ansString = s.substring(i-j-1, i-j-1+maxNum);
             }
-            for (j = 1; (i-j) > 0 && (i+j) < s.length(); j++) {
-                if(s.charAt(i-j+1) != s.charAt(i+j)) {
+            flag = false;
+            for (j = 0; (i-j) >= 0 && (i+j+1) < s.length(); j++) {
+                if(s.charAt(i-j) != s.charAt(i+j+1)) {
+                    flag = true;
                     break;
-                }    
-                temp = j*2;                
+                }           
+                temp = j*2+2;                
             }
             if (temp > maxNum) {
+                j-=1;
                 maxNum = temp;
-                // System.out.println(i);
-                // System.out.println(j);
-                // System.out.println(i-j);
-                ansString = s.substring(i-j, i-j+maxNum);    
-                System.out.println(ansString);
+                ansString = s.substring(i-j, i-j+maxNum);  
             }
+            flag = false;
         }
         return ansString.toString();
     }
     public static void main(String[] args) {
         Solution s = new Solution();
-        String ansString = s.longestPalindrome("cbbd");
+        String ansString = s.longestPalindrome("aabba");
         System.out.println(ansString);
     }
 }
