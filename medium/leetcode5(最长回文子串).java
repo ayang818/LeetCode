@@ -12,47 +12,45 @@
 class Solution {
     public String longestPalindrome(String s) {
         int maxNum = 1, temp = 1, i,j;
-        boolean flag = false;
+        // s为空情况
         if (s.length() == 0) {
             return "";
         }
-        if (s.length() == 1) {
-            return s;
-        }
+        // 设置初始值
         String ansString = s.substring(0,1);
         for (i=0; i<s.length(); i++) {
+            // 按奇数长度拓展
             for (j=0; (i-j) > 0 && (i+j+1) < s.length(); j++) {
                 if(s.charAt(i-j-1) != s.charAt(i+j+1)) {
-                    flag = true;
                     break;
                 }    
+                // 记录此循环回文长度
                 temp = (j+1)*2+1;
             }
-            if (temp > maxNum && i != 0) {
-                j-=1;
+            if (temp > maxNum) {
                 maxNum = temp;
-                ansString = s.substring(i-j-1, i-j-1+maxNum);
+                ansString = s.substring(i-j, i-j+maxNum);
             }
-            flag = false;
+            // 按偶数长度拓展
             for (j = 0; (i-j) >= 0 && (i+j+1) < s.length(); j++) {
                 if(s.charAt(i-j) != s.charAt(i+j+1)) {
-                    flag = true;
                     break;
                 }           
                 temp = j*2+2;                
             }
+            System.out.println(i+" "+j);
             if (temp > maxNum) {
                 j-=1;
+                System.out.println(i+" "+j);
                 maxNum = temp;
                 ansString = s.substring(i-j, i-j+maxNum);  
             }
-            flag = false;
         }
         return ansString.toString();
     }
     public static void main(String[] args) {
         Solution s = new Solution();
-        String ansString = s.longestPalindrome("aabba");
+        String ansString = s.longestPalindrome("cccc");
         System.out.println(ansString);
     }
 }
