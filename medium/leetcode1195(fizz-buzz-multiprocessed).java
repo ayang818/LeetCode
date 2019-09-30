@@ -13,10 +13,9 @@ class FizzBuzz {
 
     // printFizz.run() outputs "fizz".
     public void fizz(Runnable printFizz) throws InterruptedException {
-        for (; start <= n;) {
+        while(true) {
             semFizz.acquire();
             if (start > n) {
-                semFizz.release();
                 semBuzz.release();
                 semNone.release();
                 semFizzBuzz.release();
@@ -34,11 +33,10 @@ class FizzBuzz {
 
     // printBuzz.run() outputs "buzz".
     public void buzz(Runnable printBuzz) throws InterruptedException {
-        for (; start <= n;) {
+        while(true) {
             semBuzz.acquire();
             if (start > n) {
                 semFizz.release();
-                semBuzz.release();
                 semNone.release();
                 semFizzBuzz.release();
                 break;
@@ -55,13 +53,12 @@ class FizzBuzz {
 
     // printFizzBuzz.run() outputs "fizzbuzz".
     public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
-        for (; start <= n;) {
+        while(true) {
             semFizzBuzz.acquire();
             if (start > n) {
                 semFizz.release();
                 semBuzz.release();
                 semNone.release();
-                semFizzBuzz.release();
                 break;
             }
             if (start%3 == 0 && start%5 == 0) {
@@ -71,9 +68,9 @@ class FizzBuzz {
                     semFizz.release();
                     semBuzz.release();
                     semNone.release();
-                    semFizzBuzz.release();  
                     break;
                 }
+                start++;
                 semFizzBuzz.release();
             } else {
                 semFizz.release();
@@ -83,12 +80,11 @@ class FizzBuzz {
 
     // printNumber.accept(x) outputs "x", where x is an integer.
     public void number(IntConsumer printNumber) throws InterruptedException {
-        for (; start <= n;) {
+        while(true) {
             semNone.acquire();
             if (start > n) {
                 semFizz.release();
                 semBuzz.release();
-                semNone.release();
                 semFizzBuzz.release();
                 break;
             }
