@@ -8,83 +8,83 @@
 |---|---|---|---|
 |1|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[Python](/easy/leetcode1.py)|哈希|
 |2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[Java](/medium/leetcode2.java)||
-|3|[无重复字符的最大子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[Java](medium\leetcode3.java)||
-|4|[寻找两个有序数组中的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)|[Java](hard\leetcode4.java)||
-|5|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring)|[Java](medium\leetcode5.java)||
-|6|[Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion)|[Java](medium\leetcode6.java)||
-|7|[整数反转](https://leetcode-cn.com/problems/reverse-integer)|[Java](easy\leetcode7.java)||
-|8|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi)|[Java](medium\Leetcode8.java)||
+|3|[无重复字符的最大子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[Java](\medium\leetcode3.java)||
+|4|[寻找两个有序数组中的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)|[Java](\hard\leetcode4.java)||
+|5|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring)|[Java](\medium\leetcode5.java)||
+|6|[Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion)|[Java](\medium\leetcode6.java)||
+|7|[整数反转](https://leetcode-cn.com/problems/reverse-integer)|[Java](\easy\leetcode7.java)||
+|8|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi)|[Java](\medium\Leetcode8.java)||
 |9|[回文数](https://leetcode-cn.com/problems/palindrome-number)|[Python](easy\leetcode9.py)||
-|11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water)|[Java](medium\leetcode11.java)||
+|11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water)|[Java](\medium\leetcode11.java)||
 |13|[罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer)|[Python](easy\leetcode13.py)||
 |14|[最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix)|[Python](easy\leetcode14.py)||
-|15|[三数之和](https://leetcode-cn.com/problems/3sum)|[Java](medium\leetcode15.java)||
-|17|[电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|[Java](medium\leetcode17.java)||
-|19|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|[Java](medium\leetcode19.java)||
-|20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses)|[Python](easy\leetcode20.py)||
-|21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)|[Python](easy\leetcode21.py)||
+|15|[三数之和](https://leetcode-cn.com/problems/3sum)|[Java](\medium\leetcode15.java)||
+|17|[电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|[Java](\medium\leetcode17.java)||
+|19|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|[Java](\medium\leetcode19.java)||
+|20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses)|[Python](\easy\leetcode20.py)||
+|21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)|[Python](\easy\leetcode21.py)||
 |22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses)|[Java](medium\leetcode22.java)||
-|26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|[Python](easy\leetcode26.py)||
-|27|[移除元素](https://leetcode-cn.com/problems/remove-element)|[Python](easy\leetcode27.py)||
-|28|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr)|[Python](easy\leetcode28.py)||
-|29|[两数相除](https://leetcode-cn.com/problems/divide-two-integers)|[Java](medium\leetcode29.java)||
-|33|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)|[Java](medium\leetcode33.java)||
-|34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[Java](medium\leetcode34.java)||
+|26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|[Python](\easy\leetcode26.py)||
+|27|[移除元素](https://leetcode-cn.com/problems/remove-element)|[Python](\easy\leetcode27.py)||
+|28|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr)|[Python](\easy\leetcode28.py)||
+|29|[两数相除](https://leetcode-cn.com/problems/divide-two-integers)|[Java](\medium\leetcode29.java)||
+|33|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)|[Java](\medium\leetcode33.java)||
+|34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[Java](\medium\leetcode34.java)||
 |35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position)|[Java](easy\leetcode35.py)||
-|38|[报数](https://leetcode-cn.com/problems/count-and-say)|[Python](easy\leetcode38.py)||
-|53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray)|[Python](easy\leetcode53.py)||
-|58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word)|[Python](easy\leetcode58.py)||
-|62|[不同路径](https://leetcode-cn.com/problems/unique-paths)|[Java](medium\leetcode62.java)||
-|66|[加一](https://leetcode-cn.com/problems/plus-one)|[Python](easy\leetcode66.py)||
-|67|[二进制求和](https://leetcode-cn.com/problems/add-binary)|[Python](easy\leetcode67.py)||
-|69|[x 的平方根](https://leetcode-cn.com/problems/sqrtx)|[Python](easy\leetcode69.py)||
-|70|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs)|[Python](easy\leetcode70.py)||
-|72|[编辑距离](https://leetcode-cn.com/problems/edit-distance)|[Java](hard\leetcode72.java)||
-|83|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list)|[Python](easy\leetcode83.py)||
-|88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array)|[Java](easy\leetcode88.java)||
-|92|[反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii)|[Java](medium\leetcode92.java)||
-|94|[二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)|[Java](medium\leetcode94.py)||
-|98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)|[Java](medium\leetcode98.java)||
-|100|[相同的树](https://leetcode-cn.com/problems/same-tree)|[Python](easy\leetcode100.py)||
-|101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree)|[Python](easy\leetcode101.py)||
-|102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)|[Java](medium\leetcode102.java)||
-|104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)|[Java](easy\leetcode104(1).java),[Java](easy\leetcode104(2).java)||
-|107|[二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii)|[Java](easy\leetcode107.py)||
-|108|[将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree)|[Java](easy\leetcode108.java)||
-|110|[平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree)|[Java](easy\leetcode110.java)||
-|111|[二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)|[Java](easy\leetcode111.java),[Python](easy\leetcode111.py)||
-|112|[路径总和](https://leetcode-cn.com/problems/path-sum)|[Python](easy\leetcode112.py)||
-|121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|[Java](easy\leetcode121.java)||
-|122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](easy\leetcode122.java)||
-|134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](medium\leetcode134.java)||
-|144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](medium\leetcode144.java)||
-|200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands)|[Python](medium\leetcode200.py)||
-|206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list)|[Java](easy\leetcode206.java)||
-|326|[3的幂](https://leetcode-cn.com/problems/power-of-three)|[Java](easy\leetcode326.java)||
-|344|[反转字符串](https://leetcode-cn.com/problems/reverse-string)|[Java](easy\leetcode344.java)||
-|413|[等差数列划分](https://leetcode-cn.com/problems/arithmetic-slices)|[Java](medium\leetcode413.java)||
-|421|[数组中两个数的最大异或值](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|[Java](medium\leetcode421.java)||
-|454|[四数相加 II](https://leetcode-cn.com/problems/4sum-ii)|[Java](medium\leetcode454.java)||
-|547|[朋友圈](https://leetcode-cn.com/problems/friend-circles)|[Python](medium\leetcode547.py)||
-|598|[范围求和 II](easy\leetcode598.java)|[Java](easy\leetcode598.java)||
-|684|[冗余连接](https://leetcode-cn.com/problems/redundant-connection)|[Python](medium\leetcode684.py)||
-|704|[二分查找](https://leetcode-cn.com/problems/binary-search)|[Java](easy\leetcode704.java)||
-|872|[叶子相似的树](https://leetcode-cn.com/problems/leaf-similar-trees)|[Java](easy\leetcode872.java)||
-|875|[爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas)|[Java](medium\leetcode875.java)||
-|932|[漂亮数组](https://leetcode-cn.com/problems/beautiful-array)|[Java](medium\leetcode932.java)||
-|1018|[可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)|[Java](easy\leetcode1018.py)||
-|1019|[链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list)|[Java](medium\leetcode1019.java)||
-|1020|[飞地的数量](https://leetcode-cn.com/problems/number-of-enclaves)|[Java](medium\leetcode1020.java)||
-|1037|[有效的回旋镖](https://leetcode-cn.com/problems/valid-boomerang)|[Python](easy\leetcode1037.py)||
-|1038|[从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree)|[Java](easy\leetcode1038.py)||
-|1041|[困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle)|[Java](easy\leetcode1041.java)||
-|1122|[数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)|[Python](easy\leetcode1122.py)||
-|1123|[最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves)|[Java](medium\leetcode1123.java)||
-|1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)|[Java](medium\leetcode1162.java)||
-|1217|[玩筹码](https://leetcode-cn.com/problems/play-with-chips)|[Java](easy\leetcode1217.java)||
-|1281|[整数的各位积和之差](https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer)|[Java](easy\leetcode1281.java)||
-|1282|[用户分组](https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to)|[Java](medium\leetcode1282.java)||
-|1283|[使结果不超过阈值的最小除数](https://leetcode-cn.com/problems/find-the-smallest-divisor-given-a-threshold)|[Java](medium\leetcode1283.java)||
-|1290|[二进制链表转整数](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer)|[Java](easy\leetcode1290.java)||
-|1291|[顺次数](https://leetcode-cn.com/problems/sequential-digits)|[Java](medium\leetcode1291.java)||
-|1292|[元素和小于等于阈值的正方形的最大边长](https://leetcode-cn.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|[Java](medium\leetcode1292.java)||
+|38|[报数](https://leetcode-cn.com/problems/count-and-say)|[Python](\easy\leetcode38.py)||
+|53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray)|[Python](\easy\leetcode53.py)||
+|58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word)|[Python](\easy\leetcode58.py)||
+|62|[不同路径](https://leetcode-cn.com/problems/unique-paths)|[Java](\medium\leetcode62.java)||
+|66|[加一](https://leetcode-cn.com/problems/plus-one)|[Python](\easy\leetcode66.py)||
+|67|[二进制求和](https://leetcode-cn.com/problems/add-binary)|[Python](\easy\leetcode67.py)||
+|69|[x 的平方根](https://leetcode-cn.com/problems/sqrtx)|[Python](\easy\leetcode69.py)||
+|70|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs)|[Python](\easy\leetcode70.py)||
+|72|[编辑距离](https://leetcode-cn.com/problems/edit-distance)|[Java](\hard\leetcode72.java)||
+|83|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list)|[Python](\easy\leetcode83.py)||
+|88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array)|[Java](\easy\leetcode88.java)||
+|92|[反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii)|[Java](\medium\leetcode92.java)||
+|94|[二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)|[Java](\medium\leetcode94.py)||
+|98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)|[Java](\medium\leetcode98.java)||
+|100|[相同的树](https://leetcode-cn.com/problems/same-tree)|[Python](\easy\leetcode100.py)||
+|101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree)|[Python](\easy\leetcode101.py)||
+|102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)|[Java](\medium\leetcode102.java)||
+|104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)|[Java](\easy\leetcode104(1).java),[Java](\easy\leetcode104(2).java)||
+|107|[二叉树的层次遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii)|[Java](\easy\leetcode107.py)||
+|108|[将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree)|[Java](\easy\leetcode108.java)||
+|110|[平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree)|[Java](\easy\leetcode110.java)||
+|111|[二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)|[Java](\easy\leetcode111.java),[Python](\easy\leetcode111.py)||
+|112|[路径总和](https://leetcode-cn.com/problems/path-sum)|[Python](\easy\leetcode112.py)||
+|121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|[Java](\easy\leetcode121.java)||
+|122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](\easy\leetcode122.java)||
+|134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](\medium\leetcode134.java)||
+|144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](\medium\leetcode144.java)||
+|200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands)|[Python](\medium\leetcode200.py)||
+|206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list)|[Java](\easy\leetcode206.java)||
+|326|[3的幂](https://leetcode-cn.com/problems/power-of-three)|[Java](\easy\leetcode326.java)||
+|344|[反转字符串](https://leetcode-cn.com/problems/reverse-string)|[Java](\easy\leetcode344.java)||
+|413|[等差数列划分](https://leetcode-cn.com/problems/arithmetic-slices)|[Java](\medium\leetcode413.java)||
+|421|[数组中两个数的最大异或值](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|[Java](\medium\leetcode421.java)||
+|454|[四数相加 II](https://leetcode-cn.com/problems/4sum-ii)|[Java](\medium\leetcode454.java)||
+|547|[朋友圈](https://leetcode-cn.com/problems/friend-circles)|[Python](\medium\leetcode547.py)||
+|598|[范围求和 II](https://leetcode-cn.com/problems/range-addition-ii)|[Java](\easy\leetcode598.java)||
+|684|[冗余连接](https://leetcode-cn.com/problems/redundant-connection)|[Python](\medium\leetcode684.py)||
+|704|[二分查找](https://leetcode-cn.com/problems/binary-search)|[Java](\easy\leetcode704.java)||
+|872|[叶子相似的树](https://leetcode-cn.com/problems/leaf-similar-trees)|[Java](\easy\leetcode872.java)||
+|875|[爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas)|[Java](\medium\leetcode875.java)||
+|932|[漂亮数组](https://leetcode-cn.com/problems/beautiful-array)|[Java](\medium\leetcode932.java)||
+|1018|[可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)|[Java](\easy\leetcode1018.py)||
+|1019|[链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list)|[Java](\medium\leetcode1019.java)||
+|1020|[飞地的数量](https://leetcode-cn.com/problems/number-of-enclaves)|[Java](\medium\leetcode1020.java)||
+|1037|[有效的回旋镖](https://leetcode-cn.com/problems/valid-boomerang)|[Python](\easy\leetcode1037.py)||
+|1038|[从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree)|[Java](\easy\leetcode1038.py)||
+|1041|[困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle)|[Java](\easy\leetcode1041.java)||
+|1122|[数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)|[Python](\easy\leetcode1122.py)||
+|1123|[最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves)|[Java](\medium\leetcode1123.java)||
+|1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)|[Java](\medium\leetcode1162.java)||
+|1217|[玩筹码](https://leetcode-cn.com/problems/play-with-chips)|[Java](\easy\leetcode1217.java)||
+|1281|[整数的各位积和之差](https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer)|[Java](\easy\leetcode1281.java)||
+|1282|[用户分组](https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to)|[Java](\medium\leetcode1282.java)||
+|1283|[使结果不超过阈值的最小除数](https://leetcode-cn.com/problems/find-the-smallest-divisor-given-a-threshold)|[Java](\medium\leetcode1283.java)||
+|1290|[二进制链表转整数](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer)|[Java](\easy\leetcode1290.java)||
+|1291|[顺次数](https://leetcode-cn.com/problems/sequential-digits)|[Java](\medium\leetcode1291.java)||
+|1292|[元素和小于等于阈值的正方形的最大边长](https://leetcode-cn.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|[Java](\medium\leetcode1292.java)||
