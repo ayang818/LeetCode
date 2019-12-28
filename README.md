@@ -7,18 +7,18 @@
 |ID|Title(Problem link)|Solution|Type|
 |---|---|---|---|
 |1|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[Python](/easy/leetcode1.py)|哈希|
-|2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[Java](/medium/leetcode2.java)||
-|3|[无重复字符的最大子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[Java](/medium/leetcode3.java)||
-|4|[寻找两个有序数组中的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)|[Java](/hard/leetcode4.java)||
-|5|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring)|[Java](/medium/leetcode5.java)||
-|6|[Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion)|[Java](/medium/leetcode6.java)||
-|7|[整数反转](https://leetcode-cn.com/problems/reverse-integer)|[Java](/easy/leetcode7.java)||
-|8|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi)|[Java](/medium/leetcode8.java)||
-|9|[回文数](https://leetcode-cn.com/problems/palindrome-number)|[Python](/easy/leetcode9.py)||
-|11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water)|[Java](/medium/leetcode11.java)||
-|13|[罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer)|[Python](/easy/leetcode13.py)||
-|14|[最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix)|[Python](/easy/leetcode14.py)||
-|15|[三数之和](https://leetcode-cn.com/problems/3sum)|[Java](/medium/leetcode15.java)||
+|2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[Java](/medium/leetcode2.java)|大数加法，初等数学|
+|3|[无重复字符的最大子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[Java](/medium/leetcode3.java)|哈希+滑动窗口(双指针)|
+|4|[寻找两个有序数组中的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)|[Java](/hard/leetcode4.java)|二分搜索+初等数学|
+|5|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring)|[Java](/medium/leetcode5.java)|动态规划 dp[i][j]|
+|6|[Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion)|[Java](/medium/leetcode6.java)|思维题 + 二维数组滑动|
+|7|[整数反转](https://leetcode-cn.com/problems/reverse-integer)|[Java](/easy/leetcode7.java)|按位截取就完事儿|
+|8|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi)|[Java](/medium/leetcode8.java)|挺烦的一题，思路就是一个大模拟|
+|9|[回文数](https://leetcode-cn.com/problems/palindrome-number)|[Python](/easy/leetcode9.py)|简单题|
+|11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water)|[Java](/medium/leetcode11.java)|双指针+贪心|
+|13|[罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer)|[Python](/easy/leetcode13.py)|简单思维题|
+|14|[最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix)|[Python](/easy/leetcode14.java)|最快的是字典树，最简单的是每位比较O(n^2)，需要考虑极端情况|
+|15|[三数之和](https://leetcode-cn.com/problems/3sum)|[Java](/medium/leetcode15.java)|确定一位，其他两个按照两数之和做,我的做法是剪枝后才过的O(n^2)|
 |17|[电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|[Java](/medium/leetcode17.java)||
 |19|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|[Java](/medium/leetcode19.java)||
 |20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses)|[Python](/easy/leetcode20.py)||
