@@ -1,18 +1,13 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
 
 class Solution(object):
-    def levelOrder(self, root):
+    def levelOrderBottom(self, root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]
         """
         if root == None:
             return []
+        #使用下面两个队列来辅助实现
         nodeQueue = [root]
         numberQueue = [1]
         ans = [[root.val]]
@@ -37,4 +32,5 @@ class Solution(object):
                 except:
                     # print(node.right.val)
                     ans.append([node.right.val])
+        ans.reverse()
         return ans
