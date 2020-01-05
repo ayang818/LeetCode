@@ -91,3 +91,5 @@
 |1304|[和为零的N个唯一整数](https://leetcode-cn.com/problems/find-n-unique-integers-sum-up-to-zero/)|[Java](/easy/leetcode1304.java)|构造正负数|
 |1305|[两棵二叉搜索树中的所有元素](https://leetcode-cn.com/problems/all-elements-in-two-binary-search-trees/)|[Java](/medium/leetcode1305.java)|二叉树遍历|
 |1306|[跳跃游戏 III](https://leetcode-cn.com/problems/jump-game-iii/)|[Java](/medium/leetcode1306.java)|记忆化+递归搜索|
+|1308|[解码字母到整数映射](https://leetcode-cn.com/problems/decrypt-string-from-alphabet-to-integer-mapping)|[Java](/easy/leetcode1308.java)|栈 + ascii转换|
+|1309|[子数组异或查询](https://leetcode-cn.com/problems/xor-queries-of-a-subarray)|[Java](/medium/leetcode1309.java)|dp + 数学 (异或性质</br>```arr[l]^..arr[r] = (arr[0]^..arr[r]) ^ (arr[0] ^.. arr[l-1])```)|
