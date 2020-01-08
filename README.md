@@ -62,6 +62,7 @@
 |206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list)|[Java](/easy/leetcode206.java)||
 |326|[3的幂](https://leetcode-cn.com/problems/power-of-three)|[Java](/easy/leetcode326.java)||
 |344|[反转字符串](https://leetcode-cn.com/problems/reverse-string)|[Java](/easy/leetcode344.java)||
+|405|[数字转换为十六进制数](https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/)|[Java](/easy/leetcode405.java)|利用位运算，使用一个掩码```0xf```来每次截取四位，然后每次循环```num >> 4```，直接计算每四位的16进制表示即可|
 |413|[等差数列划分](https://leetcode-cn.com/problems/arithmetic-slices)|[Java](/medium/leetcode413.java)||
 |421|[数组中两个数的最大异或值](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|[Java](/medium/leetcode421.java)||
 |454|[四数相加 II](https://leetcode-cn.com/problems/4sum-ii)|[Java](/medium/leetcode454.java)||
