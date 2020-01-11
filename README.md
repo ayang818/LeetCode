@@ -95,3 +95,6 @@
 |1306|[跳跃游戏 III](https://leetcode-cn.com/problems/jump-game-iii/)|[Java](/medium/leetcode1306.java)|记忆化+递归搜索|
 |1308|[解码字母到整数映射](https://leetcode-cn.com/problems/decrypt-string-from-alphabet-to-integer-mapping)|[Java](/easy/leetcode1308.java)|栈 + ascii转换|
 |1309|[子数组异或查询](https://leetcode-cn.com/problems/xor-queries-of-a-subarray)|[Java](/medium/leetcode1309.java)|dp + 数学 (异或性质</br>```arr[l]^..arr[r] = (arr[0]^..arr[r]) ^ (arr[0] ^.. arr[l-1])```)|
+||[解压缩编码列表](https://leetcode-cn.com/problems/decompress-run-length-encoded-list/)|[Java](/easy/leetcode_解压缩编码列表.java)|双周赛，水题，但是题目一开始没看懂|
+||[矩阵区域和](https://leetcode-cn.com/problems/matrix-block-sum/)|[Java](/medium/leetcode_矩阵区域和.java)|暴力矩阵求和就能过，注意判断边界即可|
+||[祖父节点值为偶数的节点和](https://leetcode-cn.com/problems/sum-of-nodes-with-even-valued-grandparent/)|[Java](/medium/leetcode_祖父节点值是偶数的节点和.java)|dfs+深度判断，递归即可|
