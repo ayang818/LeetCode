@@ -98,3 +98,6 @@
 ||[解压缩编码列表](https://leetcode-cn.com/problems/decompress-run-length-encoded-list/)|[Java](/easy/leetcode_解压缩编码列表.java)|双周赛，水题，但是题目一开始没看懂|
 ||[矩阵区域和](https://leetcode-cn.com/problems/matrix-block-sum/)|[Java](/medium/leetcode_矩阵区域和.java)|暴力矩阵求和就能过，注意判断边界即可|
 ||[祖父节点值为偶数的节点和](https://leetcode-cn.com/problems/sum-of-nodes-with-even-valued-grandparent/)|[Java](/medium/leetcode_祖父节点值是偶数的节点和.java)|dfs+深度判断，递归即可|
+||[将整数转换为两个无零整数的和](https://leetcode-cn.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/)|[Java](/easy/leetcode_将整数转换为两个无零整数的和.java)|数字转化为字符串，模拟|
+||[或运算的最小翻转次数](https://leetcode-cn.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)|[Java](/medium/leetcode_或运算的最小翻转次数.java)|位运算，对于三个数按1为mask做位截取，根据策略判断，策略总共有2^3种，按照类别分类然后操作即可|
+||[连通网络的操作次数](https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected/)|[Java](/medium/leetcode_连通网络的操作次数.java)|并查集，首先判断边的数量够不够构造一个联通集，<code>机器数量-1 > 边的数量</code>则不能构成，然后使用并查集判断总共有几个集合，如果只有一个集合，不做操作；如果超过一个集合，那个就要做<code>集合数-1</code>次操作(同样使用dfs也可以判断连通块的个数，方法类似)|
