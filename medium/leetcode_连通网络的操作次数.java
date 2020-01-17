@@ -1,12 +1,13 @@
 class Solution {
     int[] list;
+
     public int makeConnected(int n, int[][] connections) {
-        if (n-1 > connections.length) return -1;
+        if (n - 1 > connections.length) return -1;
         list = new int[n];
         for (int i = 0; i < n; i++) {
             list[i] = i;
         }
-        for (int i = 0; i< connections.length; i++) {
+        for (int i = 0; i < connections.length; i++) {
             merge(connections[i][0], connections[i][1]);
         }
         int num = 0;
@@ -36,5 +37,5 @@ class Solution {
         }
         return a;
     }
-    
+
 }

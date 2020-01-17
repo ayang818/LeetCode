@@ -1,14 +1,15 @@
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
 class Solution {
     int sum = 0;
+
     public int sumEvenGrandparent(TreeNode root) {
         if (root == null) {
             return 0;
@@ -22,8 +23,8 @@ class Solution {
         }
         return sum;
     }
-    
-    public void calc(TreeNode node,int depth) {
+
+    public void calc(TreeNode node, int depth) {
         if (node == null) {
             return;
         }

@@ -8,8 +8,8 @@ class ZeroEvenOdd {
 
     public ZeroEvenOdd(int n) {
         this.n = n;
-        evenTimes = n/2;
-        oddTimes = n%2 == 0 ? n/2 : n/2+1;
+        evenTimes = n / 2;
+        oddTimes = n % 2 == 0 ? n / 2 : n / 2 + 1;
     }
 
     // printNumber.accept(x) outputs "x", where x is an integer.
@@ -17,7 +17,7 @@ class ZeroEvenOdd {
         for (int i = 1; i <= n; i++) {
             semZero.acquire();
             printNumber.accept(0);
-            if (i%2 == 1) {
+            if (i % 2 == 1) {
                 semOdd.release();
             } else {
                 semEven.release();
@@ -26,7 +26,7 @@ class ZeroEvenOdd {
     }
 
     public void even(IntConsumer printNumber) throws InterruptedException {
-        for(int i = 0, j = 2; i < evenTimes; i++,j+=2) {
+        for (int i = 0, j = 2; i < evenTimes; i++, j += 2) {
             semEven.acquire();
             printNumber.accept(j);
             semZero.release();
@@ -34,7 +34,7 @@ class ZeroEvenOdd {
     }
 
     public void odd(IntConsumer printNumber) throws InterruptedException {
-        for (int i = 0,j = 1; i < oddTimes; i++,j+=2) {
+        for (int i = 0, j = 1; i < oddTimes; i++, j += 2) {
             semOdd.acquire();
             printNumber.accept(j);
             semZero.release();

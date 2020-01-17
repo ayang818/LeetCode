@@ -20,17 +20,17 @@
 
 
 //题解：使用一个队列加上一个集合瞎搞搞出来的
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.HashSet;
 import java.util.Set;
-public class Pf1006
-{
+
+public class Pf1006 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        while(scan.hasNextInt())
-        {
+        while (scan.hasNextInt()) {
             int allNum = scan.nextInt();
             int[] list = new int[allNum];
             int flag = 0;
@@ -46,15 +46,13 @@ public class Pf1006
                 set.add(list[i]);
                 // System.out.println(queue);
                 // System.out.println(set);
-                if(set.size() > 2)
-                {
+                if (set.size() > 2) {
                     queue.remove(0);
                     set.clear();
                     set.addAll(queue);
                 }
-                if(queue.size() >=need && set.size() <= 2)
-                {
-                    if(queue.size() > ans){
+                if (queue.size() >= need && set.size() <= 2) {
+                    if (queue.size() > ans) {
                         flag = 1;
                         ans = queue.size();
                     }
@@ -62,25 +60,23 @@ public class Pf1006
                 // System.out.println(ans);
             }
             Set<Integer> tempSet = new HashSet<>();
-            while(!queue.isEmpty()){
+            while (!queue.isEmpty()) {
                 queue.remove(0);
                 tempSet.clear();
                 tempSet.addAll(queue);
-                if(queue.size() >= need && tempSet.size() <= 2){
-                    if(queue.size() > ans){
+                if (queue.size() >= need && tempSet.size() <= 2) {
+                    if (queue.size() > ans) {
                         flag = 1;
                         ans = queue.size();
                     }
-                }                
+                }
             }
-            if (flag == 1)
-            {
+            if (flag == 1) {
                 System.out.println(ans);
-            }
-            else{
+            } else {
                 System.out.println("犹豫，就会败北");
             }
         }
     }
-    
+
 }

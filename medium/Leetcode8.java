@@ -1,6 +1,7 @@
 class Solution {
-    Character[] chars = new Character[]{'1','2','3','4','5','6','7','8','9'};
+    Character[] chars = new Character[]{'1', '2', '3', '4', '5', '6', '7', '8', '9'};
     List<Character> charList = Arrays.asList(chars);
+
     public int myAtoi(String str) {
         if ("2147483648".equals(str)) {
             return 2147483647;
@@ -14,7 +15,7 @@ class Solution {
             int calc = calc(res, tempStr);
             return calc == Integer.MIN_VALUE ? Integer.MIN_VALUE : -calc;
         }
-        if (tempStr.startsWith("+") || (tempStr.length() != 0 && (tempStr.charAt(0) == '0' ||charList.contains(tempStr.charAt(0))))) {
+        if (tempStr.startsWith("+") || (tempStr.length() != 0 && (tempStr.charAt(0) == '0' || charList.contains(tempStr.charAt(0))))) {
             int calc = calc(res, tempStr);
             return calc == Integer.MIN_VALUE ? Integer.MAX_VALUE : calc;
         }
@@ -22,7 +23,7 @@ class Solution {
     }
 
     public int calc(Integer res, String tempStr) {
-        for (int i = 0; i < tempStr.length() ; i++) {
+        for (int i = 0; i < tempStr.length(); i++) {
             if ((i == 0 && (tempStr.charAt(0) == '+'))) {
                 continue;
             }
@@ -35,7 +36,7 @@ class Solution {
             if (res == 0) {
                 res += parseChar(tempStr.charAt(i));
             } else {
-                long tempLong =  ((long) res * (long) 10) + (long) parseChar(tempStr.charAt(i));
+                long tempLong = ((long) res * (long) 10) + (long) parseChar(tempStr.charAt(i));
                 if (tempLong > Integer.MAX_VALUE) {
                     return Integer.MIN_VALUE;
                 }

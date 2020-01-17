@@ -16,24 +16,23 @@ import java.util.Stack;
 //             return 1;
 //     }
 // }
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
+ * int val;
+ * TreeNode left;
+ * TreeNode right;
+ * TreeNode(int x) { val = x; }
  * }
  */
 //栈实现一次DFS
 class Solution {
     public int minDepth(TreeNode root) {
-        if(root == null)
-        {
+        if (root == null) {
             return 0;
         }
-        if (root.left == null && root.right == null)
-        {
+        if (root.left == null && root.right == null) {
             return 1;
         }
         Stack<TreeNode> nodeStack = new Stack<>();
@@ -41,24 +40,20 @@ class Solution {
         nodeStack.push(root);
         numberStack.push(1);
         int min_depth = 10000;
-        while (nodeStack.size() != 0)
-        {
+        while (nodeStack.size() != 0) {
             TreeNode node = nodeStack.pop();
             int number = numberStack.pop();
-            if (node.left == null && node.right == null)
-            {
+            if (node.left == null && node.right == null) {
                 min_depth = java.lang.Math.min(min_depth, number);
             }
-            if (node.left != null)
-            {
+            if (node.left != null) {
                 nodeStack.push(node.left);
-                numberStack.push(number+1);
+                numberStack.push(number + 1);
                 // min_depth = java.lang.Math.min(min_depth, number+1);
             }
-            if (node.right != null)
-            {
+            if (node.right != null) {
                 nodeStack.push(node.right);
-                numberStack.push(number+1);
+                numberStack.push(number + 1);
                 // min_depth = java.lang.Math.min(min_depth, number+1);
             }
         }

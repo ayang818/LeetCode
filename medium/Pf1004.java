@@ -19,90 +19,82 @@
 
 
 //题解：搜索模板题，反正就这么找，每走一格把走过的格子堵了，过程中使用一个栈辅助实现。
+
 import java.util.Scanner;
 import java.util.Stack;
 
-public class Pf1004
-{
+public class Pf1004 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        while (scan.hasNextInt()){
-        int x = scan.nextInt();
-        int y = scan.nextInt();
-        int[][] list = new int[x][y];
-        int startx=0;
-        int starty=0;
-        int flag = 0;
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                list[i][j] = scan.nextInt();
+        while (scan.hasNextInt()) {
+            int x = scan.nextInt();
+            int y = scan.nextInt();
+            int[][] list = new int[x][y];
+            int startx = 0;
+            int starty = 0;
+            int flag = 0;
+            for (int i = 0; i < x; i++) {
+                for (int j = 0; j < y; j++) {
+                    list[i][j] = scan.nextInt();
+                }
             }
-        }
-        for (int i = 0; i < x; i++) {
-            for (int j = 0; j < y; j++) {
-                if(list[i][j] == 2)
-                {
-                    startx = i;
-                    starty = j;
+            for (int i = 0; i < x; i++) {
+                for (int j = 0; j < y; j++) {
+                    if (list[i][j] == 2) {
+                        startx = i;
+                        starty = j;
+                        break;
+                    }
+                }
+            }
+            Stack<Integer> xList = new Stack<>();
+            xList.push(startx);
+            Stack<Integer> yList = new Stack<>();
+            yList.push(starty);
+            while (!xList.empty() && !yList.empty()) {
+                // System.out.println("1");
+                int ax = xList.pop();
+                int ay = yList.pop();
+                if (list[ax][ay] == 3) {
+                    // System.out.println("name");
+                    flag = 1;
                     break;
                 }
-            }
-        }
-        Stack<Integer> xList = new Stack<>();
-        xList.push(startx);
-        Stack<Integer> yList = new Stack<>();
-        yList.push(starty);
-        while(!xList.empty() && !yList.empty())
-        {
-            // System.out.println("1");
-            int ax = xList.pop();
-            int ay = yList.pop();
-            if (list[ax][ay] == 3)
-            {
-                // System.out.println("name");
-                flag = 1;
-                break;
-            }
-            if(ax-1>=0)
-            {
-                if (list[ax-1][ay] == 0 || list[ax-1][ay] == 3){
-                // System.out.println("#1");
-                xList.push(ax-1);
-                yList.push(ay);
+                if (ax - 1 >= 0) {
+                    if (list[ax - 1][ay] == 0 || list[ax - 1][ay] == 3) {
+                        // System.out.println("#1");
+                        xList.push(ax - 1);
+                        yList.push(ay);
+                    }
                 }
-            }
-            if(ay+1<y)
-            {
-                if (list[ax][ay+1] == 0 || list[ax][ay+1] == 3){
-                // System.out.println("#4");
-                xList.push(ax);
-                yList.push(ay+1);
+                if (ay + 1 < y) {
+                    if (list[ax][ay + 1] == 0 || list[ax][ay + 1] == 3) {
+                        // System.out.println("#4");
+                        xList.push(ax);
+                        yList.push(ay + 1);
+                    }
                 }
-            }
-            if(ax+1<x)
-            {
-                if (list[ax+1][ay] == 0 || list[ax+1][ay] == 3){
-                // System.out.println("#2");
-                xList.push(ax+1);
-                yList.push(ay);
+                if (ax + 1 < x) {
+                    if (list[ax + 1][ay] == 0 || list[ax + 1][ay] == 3) {
+                        // System.out.println("#2");
+                        xList.push(ax + 1);
+                        yList.push(ay);
+                    }
                 }
-            }
-            if(ay-1>=0)
-            {
-                if(list[ax][ay-1] == 0 || list[ax][ay-1] == 3){
-                // System.out.println("#3");
-                xList.push(ax);
-                yList.push(ay-1);
+                if (ay - 1 >= 0) {
+                    if (list[ax][ay - 1] == 0 || list[ax][ay - 1] == 3) {
+                        // System.out.println("#3");
+                        xList.push(ax);
+                        yList.push(ay - 1);
+                    }
                 }
+                list[ax][ay] = 1;
             }
-            list[ax][ay] = 1;
-        }
-        if (flag == 1){
-        System.out.println("游戏可以正常进行");
-        }
-        else {
-        System.out.println("这破游戏有Bug,宫崎英高跌落神坛了");
-        }
+            if (flag == 1) {
+                System.out.println("游戏可以正常进行");
+            } else {
+                System.out.println("这破游戏有Bug,宫崎英高跌落神坛了");
+            }
         }
     }
 }

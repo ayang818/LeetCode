@@ -7,7 +7,6 @@
 
 // 只有在平面中存在环使得机器人永远无法离开时，返回 true。否则，返回 false。
 
- 
 
 // 示例 1：
 
@@ -24,11 +23,11 @@
 // 机器人无限向北移动
 class Solution {
     public boolean isRobotBounded(String instructions) {
-        int x=0;
+        int x = 0;
         int y = 0;
         int t = 4;
         int state = 1;
-        while (t>0) {
+        while (t > 0) {
             for (int i = 0; i < instructions.length(); i++) {
                 if (instructions.charAt(i) == 'L') {
                     state--;
@@ -42,20 +41,26 @@ class Solution {
                 if (instructions.charAt(i) == 'G') {
                     switch (state) {
                         case 1:
-                            y++;break;
+                            y++;
+                            break;
                         case 2:
-                            x++;break;
+                            x++;
+                            break;
                         case 3:
-                            y--;break;
+                            y--;
+                            break;
                         case 4:
-                            x--;break;
+                            x--;
+                            break;
                     }
                 }
             }
             t--;
         }
-        if(x==0&&y==0){
+        if (x == 0 && y == 0) {
             return true;
-        }else {return false;}
+        } else {
+            return false;
+        }
     }
 }

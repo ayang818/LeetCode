@@ -14,6 +14,6 @@ class Solution {
                 else dp[i][j] = Math.min(Math.min(dp[i - 1][j - 1], dp[i][j - 1]), dp[i - 1][j]) + 1;
             }
         }
-        return dp[n1][n2];  
+        return dp[n1][n2];
     }
 }

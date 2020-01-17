@@ -8,7 +8,7 @@ class Solution {
             } else {
                 Integer temp2 = stack.pop();
                 Integer temp1 = stack.pop();
-                stack.push(temp1*10 + temp2);
+                stack.push(temp1 * 10 + temp2);
             }
         }
         StringBuilder sb = new StringBuilder();

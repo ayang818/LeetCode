@@ -1,9 +1,10 @@
 class Foo {
-       
+
     private CountDownLatch latchSecond = new CountDownLatch(2);
     private CountDownLatch latchThird = new CountDownLatch(3);
+
     public Foo() {
-        
+
     }
 
     public void first(Runnable printFirst) throws InterruptedException {

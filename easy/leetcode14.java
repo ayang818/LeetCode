@@ -11,11 +11,11 @@ class Solution {
             res.append(strs[0].charAt(i));
             for (int j = 0; j < strs.length; j++) {
                 String tempString = strs[j];
-                if (tempString.length() < i+1) {
-                    return res.delete(i, i+1).toString();
+                if (tempString.length() < i + 1) {
+                    return res.delete(i, i + 1).toString();
                 }
-                if (!tempString.substring(0, i+1).equals(res.toString())) {
-                    return res.delete(i, i+1).toString();
+                if (!tempString.substring(0, i + 1).equals(res.toString())) {
+                    return res.delete(i, i + 1).toString();
                 }
             }
         }

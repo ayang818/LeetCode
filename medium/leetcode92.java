@@ -1,9 +1,9 @@
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
+ * int val;
+ * ListNode next;
+ * ListNode(int x) { val = x; }
  * }
  */
 class Solution {
@@ -13,6 +13,7 @@ class Solution {
     ListNode reverseNode;
     ListNode if1;
     int count = 0;
+
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if (count == 0) {
             start_0 = head;
@@ -24,11 +25,11 @@ class Solution {
         ListNode nextNode = head.next;
         count++;
         if (count < m || count > n) {
-            if (count == m-1) {
-                start_1 = currentNode;                
+            if (count == m - 1) {
+                start_1 = currentNode;
             }
             head = head.next;
-            reverseBetween(head, m , n);
+            reverseBetween(head, m, n);
         } else {
             if (count == m) {
                 start_2 = currentNode;

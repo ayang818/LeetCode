@@ -27,6 +27,7 @@ class Solution {
         }
         return -1;
     }
+
     public static void main(String[] args) {
         Solution s = new Solution();
         int[] list = {4, 5, 1, 2, 3};

@@ -25,9 +25,9 @@
 class Solution {
     public int maxProfit(int[] prices) {
         int hasEarned = 0;
-        for (int i = 0; i < prices.length-1; i++) {
-            int addsNumber = prices[i+1]-prices[i];
-            if(addsNumber > 0) hasEarned+=addsNumber;
+        for (int i = 0; i < prices.length - 1; i++) {
+            int addsNumber = prices[i + 1] - prices[i];
+            if (addsNumber > 0) hasEarned += addsNumber;
         }
         return hasEarned;
     }

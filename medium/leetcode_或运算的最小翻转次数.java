@@ -21,7 +21,7 @@ class Solution {
             b = (b >> 1);
             c = (c >> 1);
             // System.out.println(a + " "+ b + " "+ c);
-            if (a <= 0 && b <= 0 && c<=0) {
+            if (a <= 0 && b <= 0 && c <= 0) {
                 break;
             }
         }

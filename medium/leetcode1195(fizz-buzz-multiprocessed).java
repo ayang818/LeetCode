@@ -13,7 +13,7 @@ class FizzBuzz {
 
     // printFizz.run() outputs "fizz".
     public void fizz(Runnable printFizz) throws InterruptedException {
-        while(true) {
+        while (true) {
             semFizz.acquire();
             if (start > n) {
                 semBuzz.release();
@@ -21,7 +21,7 @@ class FizzBuzz {
                 semFizzBuzz.release();
                 break;
             }
-            if (start%3 == 0) {
+            if (start % 3 == 0) {
                 printFizz.run();
                 start++;
                 semFizzBuzz.release();
@@ -33,7 +33,7 @@ class FizzBuzz {
 
     // printBuzz.run() outputs "buzz".
     public void buzz(Runnable printBuzz) throws InterruptedException {
-        while(true) {
+        while (true) {
             semBuzz.acquire();
             if (start > n) {
                 semFizz.release();
@@ -41,7 +41,7 @@ class FizzBuzz {
                 semFizzBuzz.release();
                 break;
             }
-            if (start%5 == 0) {
+            if (start % 5 == 0) {
                 printBuzz.run();
                 start++;
                 semFizzBuzz.release();
@@ -53,7 +53,7 @@ class FizzBuzz {
 
     // printFizzBuzz.run() outputs "fizzbuzz".
     public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
-        while(true) {
+        while (true) {
             semFizzBuzz.acquire();
             if (start > n) {
                 semFizz.release();
@@ -61,7 +61,7 @@ class FizzBuzz {
                 semNone.release();
                 break;
             }
-            if (start%3 == 0 && start%5 == 0) {
+            if (start % 3 == 0 && start % 5 == 0) {
                 printFizzBuzz.run();
                 if (start == n) {
                     start++;
@@ -80,7 +80,7 @@ class FizzBuzz {
 
     // printNumber.accept(x) outputs "x", where x is an integer.
     public void number(IntConsumer printNumber) throws InterruptedException {
-        while(true) {
+        while (true) {
             semNone.acquire();
             if (start > n) {
                 semFizz.release();

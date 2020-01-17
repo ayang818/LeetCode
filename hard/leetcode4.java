@@ -6,15 +6,15 @@ class Solution {
         for (int i = 0; i < nums1.length; i++) {
             concatList[i] = nums1[i];
         }
-        for (int i = 0; i < nums2.length ; i++) {
-            concatList[nums1.length+i] = nums2[i];
+        for (int i = 0; i < nums2.length; i++) {
+            concatList[nums1.length + i] = nums2[i];
         }
         Arrays.sort(concatList);
         int length = concatList.length;
-        if (length %2 == 0) {
-            return (concatList[length/2]+concatList[length/2-1])/2.0;
+        if (length % 2 == 0) {
+            return (concatList[length / 2] + concatList[length / 2 - 1]) / 2.0;
         }
-        return (concatList[length/2]);
+        return (concatList[length / 2]);
     }
 }
 
@@ -24,10 +24,10 @@ class Solution {
         int length2 = nums2.length;
 
         if (length1 == 0) {
-            return length2 %2 == 0 ? (nums2[(length2/2)-1] + nums2[length2/2])/2.0 : nums2[length2/2];
+            return length2 % 2 == 0 ? (nums2[(length2 / 2) - 1] + nums2[length2 / 2]) / 2.0 : nums2[length2 / 2];
         }
         if (length2 == 0) {
-            return length1 %2 == 0 ? (nums1[(length1/2)-1] + nums1[length1/2])/2.0 : nums1[length1/2];
+            return length1 % 2 == 0 ? (nums1[(length1 / 2) - 1] + nums1[length1 / 2]) / 2.0 : nums1[length1 / 2];
         }
         int length = length1 + length2;
         boolean isOdd = (length % 2 == 0);
@@ -55,6 +55,6 @@ class Solution {
             }
         }
         System.out.println(Arrays.toString(ansList));
-        return isOdd ? (ansList[i1-1]+ansList[i1-2])/2.0 : ansList[i1-1];
+        return isOdd ? (ansList[i1 - 1] + ansList[i1 - 2]) / 2.0 : ansList[i1 - 1];
     }
 }

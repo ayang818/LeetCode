@@ -26,7 +26,7 @@ class Solution {
         for (int i = 0; i < prices.length; i++) {
             // if (startNumber > prices[i] && startNumber <= endNumber) startNumber = prices[i];
             // if (endNumber < prices[i] && startNumber <= endNumber)  endNumber = prices[i];
-            for (int j = i+1; j < prices.length; j++) {
+            for (int j = i + 1; j < prices.length; j++) {
                 if (prices[j] - prices[i] > hasEarned) hasEarned = prices[j] - prices[i];
             }
         }

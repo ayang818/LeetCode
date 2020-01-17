@@ -1,5 +1,6 @@
 class Solution {
     Map<Integer, int[]> memo;
+
     public int[] beautifulArray(int N) {
         memo = new HashMap();
         return f(N);
@@ -14,10 +15,10 @@ class Solution {
             ans[0] = 1;
         } else {
             int t = 0;
-            for (int x: f((N+1)/2))  // odds
-                ans[t++] = 2*x - 1;
-            for (int x: f(N/2))  // evens
-                ans[t++] = 2*x;
+            for (int x : f((N + 1) / 2))  // odds
+                ans[t++] = 2 * x - 1;
+            for (int x : f(N / 2))  // evens
+                ans[t++] = 2 * x;
         }
         memo.put(N, ans);
         return ans;

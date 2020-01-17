@@ -7,15 +7,15 @@ class Solution {
         res = temp > res ? temp : res;
         while (left < right) {
             if (height[left] < height[right]) {
-                left ++;
+                left++;
             } else if (height[left] > height[right]) {
-                right --;
+                right--;
             } else {
-                left ++;
-                right --;
+                left++;
+                right--;
             }
             temp = (Math.min(height[left], height[right])) * Math.abs(left - right);
-            res = temp > res ? temp : res; 
+            res = temp > res ? temp : res;
         }
         return res;
     }

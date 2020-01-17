@@ -12,11 +12,11 @@ class Solution {
     public void bfs(List<Integer> list, TreeNode root) {
         if (root.left != null) {
             bfs(list, root.left);
-        } 
+        }
         if (root.right != null) {
             bfs(list, root.right);
-        } 
-        if (root.right == null && root.left==null) {
+        }
+        if (root.right == null && root.left == null) {
             list.add(root.val);
         }
     }

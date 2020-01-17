@@ -5,7 +5,7 @@ class Solution {
         long resNum = 0;
         tempX = Math.abs(tempX);
         while (tempX > 0) {
-            resNum = (long) resNum*10 + ((long) tempX%10);
+            resNum = (long) resNum * 10 + ((long) tempX % 10);
             if (resNum > Integer.MAX_VALUE) return 0;
             tempX /= 10;
         }
