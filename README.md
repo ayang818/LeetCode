@@ -86,6 +86,7 @@
 |1123|[最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves)|[Java](/medium/leetcode1123.java)||
 |1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)|[Java](/medium/leetcode1162.java)||
 |1217|[玩筹码](https://leetcode-cn.com/problems/play-with-chips)|[Java](/easy/leetcode1217.java)||
+|1252|[奇数值单元格的数目](https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix/)|[Java](/easy/leetcode1252.java)|模拟即可|
 |1281|[整数的各位积和之差](https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer)|[Java](/easy/leetcode1281.java)||
 |1282|[用户分组](https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to)|[Java](/medium/leetcode1282.java)||
 |1283|[使结果不超过阈值的最小除数](https://leetcode-cn.com/problems/find-the-smallest-divisor-given-a-threshold)|[Java](/medium/leetcode1283.java)||
