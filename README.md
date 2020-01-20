@@ -55,6 +55,8 @@
 |110|[平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree)|[Java](/easy/leetcode110.java)||
 |111|[二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)|[Java](/easy/leetcode111.java),[Python](/easy/leetcode111.py)||
 |112|[路径总和](https://leetcode-cn.com/problems/path-sum)|[Python](/easy/leetcode112.py)||
+|118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[Java](/easy/leetcode118.py)|模拟，注意判断边界即可|
+|119|[杨辉三角2](https://leetcode-cn.com/problems/pascals-triangle-ii/)|[Java](/easy/leetcode119.py)|思路和118一样,获取最后一行|
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|[Java](/easy/leetcode121.java)||
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](/easy/leetcode122.java)||
 |134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](/medium/leetcode134.java)||
