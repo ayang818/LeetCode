@@ -59,6 +59,7 @@
 |119|[杨辉三角2](https://leetcode-cn.com/problems/pascals-triangle-ii/)|[Java](/easy/leetcode119.py)|思路和118一样,获取最后一行|
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|[Java](/easy/leetcode121.java)||
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](/easy/leetcode122.java)||
+|125|[验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)|[Java](/easy/leetcode125.java)|字符串模拟|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](/medium/leetcode134.java)||
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](/medium/leetcode144.java)||
 |200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands)|[Python](/medium/leetcode200.py)||
