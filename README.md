@@ -61,6 +61,8 @@
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](/easy/leetcode122.java)||
 |125|[验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)|[Java](/easy/leetcode125.java)|字符串模拟|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](/medium/leetcode134.java)||
+|136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[Java](/easy/leetcode136.java)|异或的性质  ```a^a=0```|
+|141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[Java](/easy/leetcode141.java)||
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](/medium/leetcode144.java)||
 |200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands)|[Python](/medium/leetcode200.py)||
 |206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list)|[Java](/easy/leetcode206.java)||
