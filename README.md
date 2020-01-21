@@ -80,6 +80,7 @@
 |830|[较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/)|[Java](/easy/leetcode830.java)|双指针模拟就完事了|
 |872|[叶子相似的树](https://leetcode-cn.com/problems/leaf-similar-trees)|[Java](/easy/leetcode872.java)||
 |875|[爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas)|[Java](/medium/leetcode875.java)||
+|912|[数组排序](https://leetcode-cn.com/problems/sort-an-array/)|[Java](/medium/leetcode912.java)||
 |932|[漂亮数组](https://leetcode-cn.com/problems/beautiful-array)|[Java](/medium/leetcode932.java)||
 |1018|[可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)|[Java](/easy/leetcode1018.py)||
 |1019|[链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list)|[Java](/medium/leetcode1019.java)||
