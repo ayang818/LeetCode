@@ -1,7 +1,7 @@
-<center>
-    <h1>LeetCode Solutions</h1>
-    <p style="font-weight: bolder; text-align: center;">Keep Updating!<p>
-</center>
+<p align="center">
+    <h1 align="center">Ayang818`s LeetCode Solutions</h1>
+    <p align="center">Keep Updating!<p>
+</p>
 
 > 不包括数据库和多线程的一些题目，这些虽然也有做，但是打算以后再整理
 
@@ -111,4 +111,4 @@
 ||[或运算的最小翻转次数](https://leetcode-cn.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/)|[Java](/medium/leetcode_或运算的最小翻转次数.java)|位运算，对于三个数按1为mask做位截取，根据策略判断，策略总共有2^3种，按照类别分类然后操作即可|
 ||[连通网络的操作次数](https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected/)|[Java](/medium/leetcode_连通网络的操作次数.java)|并查集，首先判断边的数量够不够构造一个联通集，<code>机器数量-1 > 边的数量</code>则不能构成，然后使用并查集判断总共有几个集合，如果只有一个集合，不做操作；如果超过一个集合，那个就要做<code>集合数-1</code>次操作(同样使用dfs也可以判断连通块的个数，方法类似)|
 ||[删除回文子序列](https://leetcode-cn.com/problems/remove-palindromic-subsequences/)|[Java](/easy/leetcode_将整数转换为两个无零整数的和.java)|重点在于字序列和子串的区别，对于最多的删除次数就是先删全部a，再删全部b|
-||[餐厅过滤器](https://leetcode-cn.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/)|[Java](/medium/leetcode_餐厅过滤器.java)|小模拟，注意比较顺序，以及veganFriendly的策略|
+||[餐厅过滤器](https://leetcode-cn.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/)|[Java](/medium/leetcode_餐厅过滤器.java)|小模拟，注意比较顺序，以及veganFriendly的选择策略|
