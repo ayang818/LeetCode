@@ -113,3 +113,6 @@
 ||[连通网络的操作次数](https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected/)|[Java](/medium/leetcode_连通网络的操作次数.java)|并查集，首先判断边的数量够不够构造一个联通集，<code>机器数量-1 > 边的数量</code>则不能构成，然后使用并查集判断总共有几个集合，如果只有一个集合，不做操作；如果超过一个集合，那个就要做<code>集合数-1</code>次操作(同样使用dfs也可以判断连通块的个数，方法类似)|
 ||[删除回文子序列](https://leetcode-cn.com/problems/remove-palindromic-subsequences/)|[Java](/easy/leetcode_将整数转换为两个无零整数的和.java)|重点在于字序列和子串的区别，对于最多的删除次数就是先删全部a，再删全部b|
 ||[餐厅过滤器](https://leetcode-cn.com/problems/filter-restaurants-by-vegan-friendly-price-and-distance/)|[Java](/medium/leetcode_餐厅过滤器.java)|小模拟，注意比较顺序，以及veganFriendly的选择策略|
+||[leetcode_方阵中战斗力最弱的 K 行](https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/)|[Java](/easy/leetcode_方阵中战斗力最弱的K行.java)|模拟+自定义比较规则(自己设置Comparable)|
+||[数组大小减半](https://leetcode-cn.com/problems/reduce-array-size-to-the-half/)|[Java](/medium/leetcode_数组大小减半.java)|使用一个Map记录数组中各项的数量，对Map按照value排序后，遍历累加直到删除的数超过原数组一半|
+||[分裂二叉树的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-splitted-binary-tree/)|[Java](/medium/leetcode_分裂二叉树的最大乘积.java)|对二叉树做dfs，并且在一个数组中记录每个节点为根节点的子树和。设总树和为total，某个子树和为x，主要找到最小的```delta_min = Math.abs(x-(total-x))```，那么最佳分裂方案的其中一个子树和就是```x = (total-delta_min)/2```，分裂二叉树的最大乘积就是```x*(total-x)%(1e9+7)```，注意中间过程最好使用long作为临时变量|
