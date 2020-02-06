@@ -64,6 +64,7 @@
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[Java](/easy/leetcode136.java)|异或的性质  ```a^a=0```|
 |141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[Java](/easy/leetcode141.java)||
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](/medium/leetcode144.java)||
+|198|[打家劫舍](https://leetcode-cn.com/problems/house-robber/)|[Java](/easy/leetcode198.java)|简单dp，状态转移方程是<br>```dp[i][0]=max(dp[i-1][1], dp[i-1][0])``` <br>```dp[i][1]=dp[i-1][0]+nums[i]```，<br>其中dp\[i]\[0]表示第i家不偷时的获取财物的最大值，dp\[i]\[1]表示第i家偷时获取财物的最大值|
 |200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands)|[Python](/medium/leetcode200.py)||
 |206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list)|[Java](/easy/leetcode206.java)||
 |326|[3的幂](https://leetcode-cn.com/problems/power-of-three)|[Java](/easy/leetcode326.java)||
