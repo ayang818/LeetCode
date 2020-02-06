@@ -102,6 +102,7 @@
 |1290|[二进制链表转整数](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer)|[Java](/easy/leetcode1290.java)||
 |1291|[顺次数](https://leetcode-cn.com/problems/sequential-digits)|[Java](/medium/leetcode1291.java)||
 |1292|[元素和小于等于阈值的正方形的最大边长](https://leetcode-cn.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold)|[Java](/medium/leetcode1292.java)||
+|1302|[层数最深叶子节点的和](https://leetcode-cn.com/problems/deepest-leaves-sum/)|[Java](/medium/leetcode1302.java)|bfs模板题|
 |1304|[和为零的N个唯一整数](https://leetcode-cn.com/problems/find-n-unique-integers-sum-up-to-zero/)|[Java](/easy/leetcode1304.java)|构造正负数|
 |1305|[两棵二叉搜索树中的所有元素](https://leetcode-cn.com/problems/all-elements-in-two-binary-search-trees/)|[Java](/medium/leetcode1305.java)|二叉树遍历|
 |1306|[跳跃游戏 III](https://leetcode-cn.com/problems/jump-game-iii/)|[Java](/medium/leetcode1306.java)|记忆化+递归搜索|
