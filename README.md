@@ -121,3 +121,8 @@
 ||[leetcode_方阵中战斗力最弱的 K 行](https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/)|[Java](/easy/leetcode_方阵中战斗力最弱的K行.java)|模拟+自定义比较规则(自己设置Comparable)|
 ||[数组大小减半](https://leetcode-cn.com/problems/reduce-array-size-to-the-half/)|[Java](/medium/leetcode_数组大小减半.java)|使用一个Map记录数组中各项的数量，对Map按照value排序后，遍历累加直到删除的数超过原数组一半|
 ||[分裂二叉树的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-splitted-binary-tree/)|[Java](/medium/leetcode_分裂二叉树的最大乘积.java)|对二叉树做dfs，并且在一个数组中记录每个节点为根节点的子树和。设总树和为total，某个子树和为x，主要找到最小的```delta_min = Math.abs(x-(total-x))```，那么最佳分裂方案的其中一个子树和就是```x = (total-delta_min)/2```，分裂二叉树的最大乘积就是```x*(total-x)%(1e9+7)```，注意中间过程最好使用long作为临时变量|
+||[将数字变成 0 的操作次数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/)|[Java](/easy/leetcode_.java)|弱智题。。。|
+||[将数字变成 0 的操作次数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/)|[Java](/easy/leetcode_将数字变成0的操作次数.java)|小学题|
+||[大小为 K 且平均值大于等于阈值的子数组数目]()|[Java](/medium/leetcode_大小为K且平均值大于等于阈值的子数组数目.java)|前缀和，要计算一组数的和，只需要计算<br>```prefix[i] = prefix[i-1] - arr[i-1] + arr[i+k-1]```即可|
+||[时钟指针的夹角]()|[Java](/medium/leetcode_时钟指针的夹角.java)|简单的模拟，分针的度数很好算，时针的度数等于分针的度数加上分针对应比例的度数|
+||[跳跃游戏 IV]()|[Java](/hard/leetcode_跳跃游戏IV.java)|记忆化搜索；剪枝的策略是每当跳到某一点的次数大于曾跳到过这点的最小次数那么则舍弃这次递归(然而剪枝后还是被最后一组数据卡了时间)|
