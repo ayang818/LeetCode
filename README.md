@@ -121,8 +121,10 @@
 ||[leetcode_方阵中战斗力最弱的 K 行](https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/)|[Java](/easy/leetcode_方阵中战斗力最弱的K行.java)|模拟+自定义比较规则(自己设置Comparable)|
 ||[数组大小减半](https://leetcode-cn.com/problems/reduce-array-size-to-the-half/)|[Java](/medium/leetcode_数组大小减半.java)|使用一个Map记录数组中各项的数量，对Map按照value排序后，遍历累加直到删除的数超过原数组一半|
 ||[分裂二叉树的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-splitted-binary-tree/)|[Java](/medium/leetcode_分裂二叉树的最大乘积.java)|对二叉树做dfs，并且在一个数组中记录每个节点为根节点的子树和。设总树和为total，某个子树和为x，主要找到最小的```delta_min = Math.abs(x-(total-x))```，那么最佳分裂方案的其中一个子树和就是```x = (total-delta_min)/2```，分裂二叉树的最大乘积就是```x*(total-x)%(1e9+7)```，注意中间过程最好使用long作为临时变量|
-||[将数字变成 0 的操作次数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/)|[Java](/easy/leetcode_.java)|弱智题。。。|
 ||[将数字变成 0 的操作次数](https://leetcode-cn.com/problems/number-of-steps-to-reduce-a-number-to-zero/)|[Java](/easy/leetcode_将数字变成0的操作次数.java)|小学题|
 ||[大小为 K 且平均值大于等于阈值的子数组数目]()|[Java](/medium/leetcode_大小为K且平均值大于等于阈值的子数组数目.java)|前缀和，要计算一组数的和，只需要计算<br>```prefix[i] = prefix[i-1] - arr[i-1] + arr[i+k-1]```即可|
 ||[时钟指针的夹角]()|[Java](/medium/leetcode_时钟指针的夹角.java)|简单的模拟，分针的度数很好算，时针的度数等于分针的度数加上分针对应比例的度数|
 ||[跳跃游戏 IV]()|[Java](/hard/leetcode_跳跃游戏IV.java)|记忆化搜索；剪枝的策略是每当跳到某一点的次数大于曾跳到过这点的最小次数那么则舍弃这次递归(然而剪枝后还是被最后一组数据卡了时间)|
+||[检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)|[Java](/easy/leetcode_检查整数及其两倍数是否存在.java)|维护一个集合，枚举每个数的两倍和一半是否在集合中|
+||[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[Java](/medium/leetcode_制造字母异位词的最小步骤数.java)|贪心(应该属于贪心策略吧)，维护两个数组，分别记录两串字符串中每个字母的出现次数。将他们的对应字母的出现次数相减的绝对值相加除2。|
+||[参加考试的最大学生数](https://leetcode-cn.com/problems/maximum-students-taking-exam/)|[Java](/hard/leetcode_参加考试的最大学生数.java)|状压dp，状态转移方程比较简单```dp[i][state] = max(dp[cur][state1], dp[cur-1][state2] + count(cur))```，dp\[i]\[state1]表示第i行state1状态下的最大答案，state是一组n位(取决于每行学生的数量)二进制数(0表示不坐人，1表示坐人)，每个state表示1种状态，总共有(1 << n)-1种状态。中间按照题目给出的策略来判断能否转移状态即可|
