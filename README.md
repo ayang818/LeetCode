@@ -11,7 +11,7 @@
 |牛客-字节跳动|[万万没想到之抓捕孔连顺](https://www.nowcoder.com/questionTerminal/c0803540c94848baac03096745b55b9b)|[Java](/nowcoder/万万没想到之抓捕孔连顺.java)|这道题需要注意的地方其实就是精度，需要提前取模是我这里错的最多的点。然后思路其实就是也是双指针，首先让一个指针跑到第一个满足要求的跨度最大的区间，然后开始移动还在头部的第二个指针。头部每移动一次，先把尾指针往后移动至最大区间，每次移动加上总数Cn-1取2中站法(固定头部，选取尾部)，最后得到总站法|
 |牛客-字节跳动|[特征提取](https://www.nowcoder.com/questionTerminal/5afcf93c419a4aa793e9b325d01957e2)|[Java](/nowcoder/特征提取.java)|这道题我的做法有点鬼畜，先把所有的帧读入一个数组，每个帧中使用集合维护，然后从每个帧的特征开始往下一帧做dfs，每找到一帧中有相同的特征，在集合中删除这个特征(剪枝)，最后比较那个连续特征出现最多(效率居然还行，说明数据比较水，这么暴力的剪枝都能过)|
 |1|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[Python](/easy/leetcode1.py)|哈希|
-|2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[Java](/medium/leetcode2.java)|大数加法，初等数学|
+|2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[Java](/medium/leetcode2.java)|2020/2/12优化了下写法，当两个链表不都为空时，相加，补进位。根据相加结果更新进位。遍历完之后，看看最后进位是否为1，若是1再补上一个1节点|
 |3|[无重复字符的最大子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[Java](/medium/leetcode3.java)|哈希+滑动窗口(双指针)|
 |4|[寻找两个有序数组中的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)|[Java](/hard/leetcode4.java)|二分搜索+初等数学|
 |5|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring)|[Java](/medium/leetcode5.java)|动态规划 dp[i][j]|
@@ -45,7 +45,7 @@
 |70|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs)|[Python](/easy/leetcode70.py)||
 |72|[编辑距离](https://leetcode-cn.com/problems/edit-distance)|[Java](/hard/leetcode72.java)||
 |83|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list)|[Python](/easy/leetcode83.py)||
-|88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array)|[Java](/easy/leetcode88.java)||
+|88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array)|[Java](/easy/leetcode88.java)|从两个数组的尾部开始维护一对双指针，从尾部对比着放|
 |92|[反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii)|[Java](/medium/leetcode92.java)||
 |94|[二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)|[Java](/medium/leetcode94.py)||
 |98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)|[Java](/medium/leetcode98.java)||
