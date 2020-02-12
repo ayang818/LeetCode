@@ -1,5 +1,5 @@
 <p align="center">
-    <h1 align="center">Ayang818`s LeetCode Solutions</h1>
+    <h2 align="center">Ayang818`s LeetCode/NowCoder Solutions</h2>
     <p align="center">Keep Updating!<p>
 </p>
 
@@ -7,6 +7,9 @@
 
 |ID|Title(Problem link)|Solution|Type|
 |---|---|---|---|
+|牛客-字节跳动|[万万没想到之聪明的编辑](https://www.nowcoder.com/questionTerminal/42852fd7045c442192fa89404ab42e92)|[Java](/nowcoder/万万没想到之聪明的编辑.java)|牛客上刷的第一题，首先注意Java中输入是hasNext()；这道题的解法是双指针，当然我是用StringBuilder，但是效果也一样，只要维护StringBuilder中最后三位和最后四位数组满足编辑关系即可|
+|牛客-字节跳动|[万万没想到之抓捕孔连顺](https://www.nowcoder.com/questionTerminal/c0803540c94848baac03096745b55b9b)|[Java](/nowcoder/万万没想到之抓捕孔连顺.java)|这道题需要注意的地方其实就是精度，需要提前取模是我这里错的最多的点。然后思路其实就是也是双指针，首先让一个指针跑到第一个满足要求的跨度最大的区间，然后开始移动还在头部的第二个指针。头部每移动一次，先把尾指针往后移动至最大区间，每次移动加上总数Cn-1取2中站法(固定头部，选取尾部)，最后得到总站法|
+|牛客-字节跳动|[特征提取](https://www.nowcoder.com/questionTerminal/5afcf93c419a4aa793e9b325d01957e2)|[Java](/nowcoder/特征提取.java)|这道题我的做法有点鬼畜，先把所有的帧读入一个数组，每个帧中使用集合维护，然后从每个帧的特征开始往下一帧做dfs，每找到一帧中有相同的特征，在集合中删除这个特征(剪枝)，最后比较那个连续特征出现最多(效率居然还行，说明数据比较水，这么暴力的剪枝都能过)|
 |1|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[Python](/easy/leetcode1.py)|哈希|
 |2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[Java](/medium/leetcode2.java)|大数加法，初等数学|
 |3|[无重复字符的最大子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[Java](/medium/leetcode3.java)|哈希+滑动窗口(双指针)|
