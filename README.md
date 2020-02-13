@@ -66,7 +66,7 @@
 |125|[验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)|[Java](/easy/leetcode125.java)|字符串模拟|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](/medium/leetcode134.java)||
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[Java](/easy/leetcode136.java)|异或的性质  ```a^a=0```|
-|139|[单词拆分](https://leetcode-cn.com/problems/word-break/)|[Java](/medium/leetcode139.java)|这题做傻了，做的时候思路不太清晰，用了一种很慢的记忆化dfsA了之后。看了下题解，其实是另一种形式的dfs，使用字符串前缀+记忆化搜索来解决。|
+|139|[单词拆分](https://leetcode-cn.com/problems/word-break/)|[Java](/medium/leetcode139.java)|这题做傻了，做的时候思路不太清晰，用了一种很慢的记忆化dfsA了之后。看了下题解，其实是另一种形式的dfs，使用字符串前缀+记忆化搜索来解决。**字符串题目多想想前缀和双指针吧**|
 |141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[Java](/easy/leetcode141.java)||
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](/medium/leetcode144.java)||
 |198|[打家劫舍](https://leetcode-cn.com/problems/house-robber/)|[Java](/easy/leetcode198.java)|简单dp，状态转移方程是<br>```dp[i][0]=max(dp[i-1][1], dp[i-1][0])``` <br>```dp[i][1]=dp[i-1][0]+nums[i]```，<br>其中dp\[i]\[0]表示第i家不偷时的获取财物的最大值，dp\[i]\[1]表示第i家偷时获取财物的最大值|
