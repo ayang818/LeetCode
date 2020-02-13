@@ -58,6 +58,7 @@
 |110|[平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree)|[Java](/easy/leetcode110.java)||
 |111|[二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)|[Java](/easy/leetcode111.java),[Python](/easy/leetcode111.py)||
 |112|[路径总和](https://leetcode-cn.com/problems/path-sum)|[Python](/easy/leetcode112.py)||
+|115|[不同的子序列](https://leetcode-cn.com/problems/distinct-subsequences/)|[Java](/hard/leetcode115.java)|字节跳动面试题，动态规划。首先二维数组```dp[i][j]```表示第一个字符串中前i个字符中第二个字符串前j个字符为子序列出现的个数。```dp[i][j]```状态转移可以从```dp[i-1][j]```以及```dp[i-1][j-1]```得到。如果```s1.charAt(i) == s2.charAt(j)```，那么```dp[i][j] = dp[i-1][j-1] + dp[i-1][j]```; 否则```dp[i][j] = dp[i-1][j]```|
 |118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[Java](/easy/leetcode118.py)|模拟，注意判断边界即可|
 |119|[杨辉三角2](https://leetcode-cn.com/problems/pascals-triangle-ii/)|[Java](/easy/leetcode119.py)|思路和118一样,获取最后一行|
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|[Java](/easy/leetcode121.java)||
@@ -80,6 +81,7 @@
 |598|[范围求和 II](https://leetcode-cn.com/problems/range-addition-ii)|[Java](/easy/leetcode598.java)||
 |684|[冗余连接](https://leetcode-cn.com/problems/redundant-connection)|[Python](/medium/leetcode684.py)||
 |704|[二分查找](https://leetcode-cn.com/problems/binary-search)|[Java](/easy/leetcode704.java)||
+|721|[账户合并](https://leetcode-cn.com/problems/accounts-merge/)|[Java](/medium/leetcode721.java)|字节跳动面试题，有一说一，我觉得操作很麻烦。做法是使用并查集，来合并相同的邮件，需要注意的是事实上同一用户的用户名都是一样的，所以在合并后不需要做特判就可以放到同一个TreeSet中|
 |822|[翻转卡片游戏](https://leetcode-cn.com/problems/card-flipping-game/)|[Java](/medium/leetcode822.java)|中等中的简单题，只要得出当正面和反面相同的就不可能是我们需要的数这个结论就可以了，使用一个Set或者数组维护不可能的数的集合，时间复杂度O(n)，空间复杂度O(n)|
 |829|[连续整数求和](https://leetcode-cn.com/problems/consecutive-numbers-sum/)|[Java](/hard/leetcode829.java)|数学性质+动态规划。1个数时，必然有一个数可构成N，2个数若要构成N，第2个数与第1个数差为1，N减掉这个1能整除2则能由商与商+1构成N。3个数若要构成N，第2个数与第1个数差为1，第3个数与第1个数的差为2，N减掉1再减掉2能整除3则能由商、商+1与商+2构成N|
 |830|[较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/)|[Java](/easy/leetcode830.java)|双指针模拟就完事了|
@@ -95,7 +97,7 @@
 |1037|[有效的回旋镖](https://leetcode-cn.com/problems/valid-boomerang)|[Python](/easy/leetcode1037.py)||
 |1038|[从二叉搜索树到更大和树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree)|[Java](/easy/leetcode1038.py)||
 |1041|[困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle)|[Java](/easy/leetcode1041.java)||
-|1122|[数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)|[Python](/easy/leetcode1122.py)||
+|1122|[数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)|[Python](/easy/leetcode1122.py)，[Java](/easy/leetcode1122.java)|2020/2/13补，在不开额外空间的情况下，使用双指针维护。|
 |1123|[最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves)|[Java](/medium/leetcode1123.java)||
 |1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)|[Java](/medium/leetcode1162.java)||
 |1186|[删除一次得到子数组最大和](https://leetcode-cn.com/problems/maximum-subarray-sum-with-one-deletion/)|[Java](/medium/leetcode1186.java)|这题属于中等中的较难题,有dp数组dp，```dp[i][j]```表示从以第i位为结尾的字数组删除j个元素的最大值，当```dp[i][0]```时，做法类似于[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)，当```dp[i][1]```时，有如下状态转移方程```dp[i][1] = max(dp[i][0], dp[i][1]+arr[i])```，时间复杂度O(n)，空间复杂度O(n)|
