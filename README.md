@@ -37,6 +37,7 @@
 |34|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array)|[Java](/medium/leetcode34.java)||
 |35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position)|[Java](/easy/leetcode35.py)||
 |38|[报数](https://leetcode-cn.com/problems/count-and-say)|[Python](/easy/leetcode38.py)||
+|42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[Java](/hard/leetcode42.java)|由题意画图很容易得到，```每格能接到的雨水数量=(min(这格左边最高的格子, 这格右边最高的格子) - 这格的高度)```，对于这样的问题，先用两个数组记录下每格左边（右边）的最大高度即可，我们只需要从左往右扫一遍就可以了。|
 |53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray)|[Python](/easy/leetcode53.py)||
 |58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word)|[Python](/easy/leetcode58.py)||
 |62|[不同路径](https://leetcode-cn.com/problems/unique-paths)|[Java](/medium/leetcode62.java)||
@@ -66,10 +67,12 @@
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](/easy/leetcode122.java)||
 |125|[验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)|[Java](/easy/leetcode125.java)|字符串模拟|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](/medium/leetcode134.java)||
+|135|[分发糖果](https://leetcode-cn.com/problems/candy/)|[Java](/hard/leetcode135.java)|这题虽然是hard，但是还是很容易1A了。首先从左往右扫描，每当当前位置的rate>前一个位置的rate，那么当前位置的糖果=前一个位置的糖果数+1。否则需要一直向前检查前一个是否符合两者之间分数高的糖果多，直到满足条件为止。|
 |136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/)|[Java](/easy/leetcode136.java)|异或的性质  ```a^a=0```|
 |139|[单词拆分](https://leetcode-cn.com/problems/word-break/)|[Java](/medium/leetcode139.java)|这题做傻了，做的时候思路不太清晰，用了一种很慢的记忆化dfsA了之后。看了下题解，其实是另一种形式的dfs，使用字符串前缀+记忆化搜索来解决。**字符串题目多想想前缀和双指针吧**|
 |141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[Java](/easy/leetcode141.java)||
 |144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|[Java](/medium/leetcode144.java)||
+|146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[Java](/medium/leetcode146.java)|挺有意思的一题，首先关于LRU缓存，可以参照[这篇文章](https://leetcode-cn.com/problems/lru-cache/solution/lru-ce-lue-xiang-jie-he-shi-xian-by-labuladong/)，这种缓存淘汰策略需要以O(1)的复杂度完成，缓存插入，和缓存删除，以及缓存容量满时候的缓存淘汰。可以使用Java中的自带的LinkedHashMap来做，但是有点作弊的嫌疑。所以我自己使用了HashMap + 双向链表来解决。之所以使用双向链表是因为在缓存删除的时候需要获取节点的前驱。然后每个节点存Map中的键和数据，之所以需要存键，是因为在缓存淘汰的时候，我们要是不知道最后一个节点的在Map中的键是什么，没办法淘汰map中的对应Entry。|
 |198|[打家劫舍](https://leetcode-cn.com/problems/house-robber/)|[Java](/easy/leetcode198.java)|简单dp，状态转移方程是<br>```dp[i][0]=max(dp[i-1][1], dp[i-1][0])``` <br>```dp[i][1]=dp[i-1][0]+nums[i]```，<br>其中dp\[i]\[0]表示第i家不偷时的获取财物的最大值，dp\[i]\[1]表示第i家偷时获取财物的最大值|
 |200|[岛屿数量](https://leetcode-cn.com/problems/number-of-islands)|[Python](/medium/leetcode200.py)||
 |206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list)|[Java](/easy/leetcode206.java)||
