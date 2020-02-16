@@ -138,3 +138,7 @@
 ||[检查整数及其两倍数是否存在](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)|[Java](/easy/leetcode_检查整数及其两倍数是否存在.java)|维护一个集合，枚举每个数的两倍和一半是否在集合中|
 ||[制造字母异位词的最小步骤数](https://leetcode-cn.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/)|[Java](/medium/leetcode_制造字母异位词的最小步骤数.java)|贪心(应该属于贪心策略吧)，维护两个数组，分别记录两串字符串中每个字母的出现次数。将他们的对应字母的出现次数相减的绝对值相加除2。|
 ||[参加考试的最大学生数](https://leetcode-cn.com/problems/maximum-students-taking-exam/)|[Java](/hard/leetcode_参加考试的最大学生数.java)|状压dp，状态转移方程比较简单```dp[i][state] = max(dp[cur][state1], dp[cur-1][state2] + count(cur))```，dp\[i]\[state1]表示第i行state1状态下的最大答案，state是一组n位(取决于每行学生的数量)二进制数(0表示不坐人，1表示坐人)，每个state表示1种状态，总共有(1 << n)-1种状态。中间按照题目给出的策略来判断能否转移状态即可|
+||[统计有序矩阵中的负数](https://leetcode-cn.com/problems/count-negative-numbers-in-a-sorted-matrix/)|[Java](/easy/leetcode_统计有序矩阵中的负数.java)|枚举即可|
+||[最后 K 个数的乘积](https://leetcode-cn.com/problems/product-of-the-last-k-numbers/)|[Java](/medium/leetcode_最后K个数的乘积.java)|提前剪枝就可以了，对于包含零的提前返回。包含1的跳过|
+||[最多可以参加的会议数目](https://leetcode-cn.com/problems/maximum-number-of-events-that-can-be-attended/)|[Java](/medium/leetcode_最多可以参加的会议数目.java)|贪心，首先按照结束时间排个序，每次选的就是最快要结束的那天就可以了。|
+||[多次求和构造目标数组](https://leetcode-cn.com/problems/construct-target-array-with-multiple-sums/)|[Java](/hard/leetcode_多次求和构造目标数组.java)|构造，可以很容易得到在每一次构造时候，目标数组的顺序其实是无关紧要的，但是目标数组中较大的数，又肯定是由较小的数的和替换得到，所以可以使用一个优先队列维护目标数组，从目标数组向下反向构造|
