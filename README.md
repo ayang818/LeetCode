@@ -41,6 +41,7 @@
 |53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray)|[Python](/easy/leetcode53.py)||
 |58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word)|[Python](/easy/leetcode58.py)||
 |62|[不同路径](https://leetcode-cn.com/problems/unique-paths)|[Java](/medium/leetcode62.java)||
+|63|[不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)|[Java](/medium/leetcode63.java)|简单dp```dp[i][j] += dp[i-1][j];dp[i][j] += dp[i][j-1];```|
 |66|[加一](https://leetcode-cn.com/problems/plus-one)|[Python](/easy/leetcode66.py)||
 |67|[二进制求和](https://leetcode-cn.com/problems/add-binary)|[Python](/easy/leetcode67.py)||
 |69|[x 的平方根](https://leetcode-cn.com/problems/sqrtx)|[Python](/easy/leetcode69.py)||
@@ -104,6 +105,7 @@
 |1041|[困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle)|[Java](/easy/leetcode1041.java)||
 |1122|[数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)|[Python](/easy/leetcode1122.py)，[Java](/easy/leetcode1122.java)|2020/2/13补，在不开额外空间的情况下，使用双指针维护。|
 |1123|[最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves)|[Java](/medium/leetcode1123.java)||
+|1143[最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)|[Java](/medium/leetcode1143.java)|二维动态规划模板题，```text1.charAt(i) == text2.charAt(j) --> dp[i][j] = dp[i-1][j-1]+1, dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1])```|
 |1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)|[Java](/medium/leetcode1162.java)||
 |1186|[删除一次得到子数组最大和](https://leetcode-cn.com/problems/maximum-subarray-sum-with-one-deletion/)|[Java](/medium/leetcode1186.java)|这题属于中等中的较难题,有dp数组dp，```dp[i][j]```表示从以第i位为结尾的字数组删除j个元素的最大值，当```dp[i][0]```时，做法类似于[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)，当```dp[i][1]```时，有如下状态转移方程```dp[i][1] = max(dp[i][0], dp[i][1]+arr[i])```，时间复杂度O(n)，空间复杂度O(n)|
 |1217|[玩筹码](https://leetcode-cn.com/problems/play-with-chips)|[Java](/easy/leetcode1217.java)||
