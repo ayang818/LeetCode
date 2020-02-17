@@ -84,7 +84,9 @@
 |421|[数组中两个数的最大异或值](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|[Java](/medium/leetcode421.java)||
 |454|[四数相加 II](https://leetcode-cn.com/problems/4sum-ii)|[Java](/medium/leetcode454.java)||
 |547|[朋友圈](https://leetcode-cn.com/problems/friend-circles)|[Python](/medium/leetcode547.py)||
+|560|[和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|[Java](/medium/leetcode560.java)|这题的意思就是需要在区间内找到连续和为k的区间，这其实就是典型的前缀和的应用场景，```prefix[i] = prefix[i-1]+nums[i-1]```，接下来的做法就和two sum的解法一样了|
 |598|[范围求和 II](https://leetcode-cn.com/problems/range-addition-ii)|[Java](/easy/leetcode598.java)||
+|665|[非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/)|[Java](/easy/leetcode665.java)|事实上这道题还算比较麻烦，首先我们扫描数组，对每一个峰值点进行转换，记录转换次数+1，转换的方法有两种，分类讨论即可|
 |684|[冗余连接](https://leetcode-cn.com/problems/redundant-connection)|[Python](/medium/leetcode684.py)||
 |704|[二分查找](https://leetcode-cn.com/problems/binary-search)|[Java](/easy/leetcode704.java)||
 |721|[账户合并](https://leetcode-cn.com/problems/accounts-merge/)|[Java](/medium/leetcode721.java)|字节跳动面试题，有一说一，我觉得操作很麻烦。做法是使用并查集，来合并相同的邮件，需要注意的是事实上同一用户的用户名都是一样的，所以在合并后不需要做特判就可以放到同一个TreeSet中|
@@ -92,11 +94,13 @@
 |829|[连续整数求和](https://leetcode-cn.com/problems/consecutive-numbers-sum/)|[Java](/hard/leetcode829.java)|数学性质+动态规划。1个数时，必然有一个数可构成N，2个数若要构成N，第2个数与第1个数差为1，N减掉这个1能整除2则能由商与商+1构成N。3个数若要构成N，第2个数与第1个数差为1，第3个数与第1个数的差为2，N减掉1再减掉2能整除3则能由商、商+1与商+2构成N|
 |830|[较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/)|[Java](/easy/leetcode830.java)|双指针模拟就完事了|
 |832|[翻转图像](https://leetcode-cn.com/problems/flipping-an-image)|[Java](/easy/leetcode832.java)|数据量比较小，直接对于列反向取反模拟即可|
+|852|[山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)|[Java](/easy/leetcode852.java)|先把首位两周没有左右边的特殊判掉，然后再遍历寻找峰顶即可|
 |872|[叶子相似的树](https://leetcode-cn.com/problems/leaf-similar-trees)|[Java](/easy/leetcode872.java)||
 |875|[爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas)|[Java](/medium/leetcode875.java)||
 |912|[数组排序](https://leetcode-cn.com/problems/sort-an-array/)|[Java](/medium/leetcode912.java)||
 |932|[漂亮数组](https://leetcode-cn.com/problems/beautiful-array)|[Java](/medium/leetcode932.java)||
 |944|[删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)|[Java](/easy/leetcode944.java)|令人自闭的题目描述，其实很简单，删除所有的非严格升序列(原题为降序列)，但是我A了之后还是没搞清楚降序列是什么意思，样例中有一句话，"那么 A 的列 ["b","a","h"] 就不是非降序排列了"，也就是说的\[b,a,h]是降序排列，可是看着显然不是啊|
+|962|[最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp/)|[Java](/medium/leetcode962.java)|(单调栈)首先要明白的就是寻找最靠近左边，和最靠近右边的一个序列对，像这种在数组中求最大/最小长度的问题一般使用单调栈来解决。单调栈的作用对于最长问题来说，就是尽量让最不容易满足条件的左侧压在栈底，然后从右边开始扫描。对于最短问题来说，就是让最容易满足的条件压在栈底，然后从右边开始扫描。|
 |1018|[可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)|[Java](/easy/leetcode1018.py)||
 |1019|[链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list)|[Java](/medium/leetcode1019.java)||
 |1020|[飞地的数量](https://leetcode-cn.com/problems/number-of-enclaves)|[Java](/medium/leetcode1020.java)||
@@ -105,6 +109,7 @@
 |1041|[困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle)|[Java](/easy/leetcode1041.java)||
 |1122|[数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)|[Python](/easy/leetcode1122.py)，[Java](/easy/leetcode1122.java)|2020/2/13补，在不开额外空间的情况下，使用双指针维护。|
 |1123|[最深叶节点的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-deepest-leaves)|[Java](/medium/leetcode1123.java)||
+|1124|[表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval/)|[Java](/medium/leetcode1124.java)|这道题属于做着比较有综合性的中等题了。首先对于一个工作时间来说，他的区别只有满足>8或不满足。所以可以将其抽象为一个只含1，-1的数组，对于一个区间是否属于良好区间，只要看这个区间的和是否>0，而判断区间的和一般我们会使用前缀和。于是问题就演化为求最长的和，我们直到最长问题会使用单调栈来解决，于是我们决定把最不容易满足```prefix[i] - prefix[j] > 0```的```prefix[j]```压到栈底，然后从后往前扫描来解决这个问题。 |
 |1143[最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)|[Java](/medium/leetcode1143.java)|二维动态规划模板题，```text1.charAt(i) == text2.charAt(j) --> dp[i][j] = dp[i-1][j-1]+1, dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1])```|
 |1162|[地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)|[Java](/medium/leetcode1162.java)||
 |1186|[删除一次得到子数组最大和](https://leetcode-cn.com/problems/maximum-subarray-sum-with-one-deletion/)|[Java](/medium/leetcode1186.java)|这题属于中等中的较难题,有dp数组dp，```dp[i][j]```表示从以第i位为结尾的字数组删除j个元素的最大值，当```dp[i][0]```时，做法类似于[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)，当```dp[i][1]```时，有如下状态转移方程```dp[i][1] = max(dp[i][0], dp[i][1]+arr[i])```，时间复杂度O(n)，空间复杂度O(n)|
