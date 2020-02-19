@@ -29,6 +29,7 @@
 |20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses)|[Python](/easy/leetcode20.py)||
 |21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)|[Python](/easy/leetcode21.py)||
 |22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses)|[Java](/medium/leetcode22.java)||
+|23|[合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|[Java](/hard/leetcode23.java)|类似于归并排序中的并，可以使用堆优化，由于是链表，不需要将所有的数一次性读入，可以先读入所有第一个数，然后堆中取出来第一个就是最小的数，构造链表即可。|
 |26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|[Python](/easy/leetcode26.py)||
 |27|[移除元素](https://leetcode-cn.com/problems/remove-element)|[Python](/easy/leetcode27.py)||
 |28|[实现 strStr()](https://leetcode-cn.com/problems/implement-strstr)|[Python](/easy/leetcode28.py)||
