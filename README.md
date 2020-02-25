@@ -39,6 +39,7 @@
 |35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position)|[Java](/easy/leetcode35.py)||
 |38|[报数](https://leetcode-cn.com/problems/count-and-say)|[Python](/easy/leetcode38.py)||
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[Java](/hard/leetcode42.java)|由题意画图很容易得到，```每格能接到的雨水数量=(min(这格左边最高的格子, 这格右边最高的格子) - 这格的高度)```，对于这样的问题，先用两个数组记录下每格左边（右边）的最大高度即可，我们只需要从左往右扫一遍就可以了。|
+|51|[N皇后](https://leetcode-cn.com/problems/n-queens/)|[Java](/hard/leetcode51.java)|2333之前一直不敢做这题，做了一下发现也不难哈哈哈。经典暴力+回溯模板题|
 |53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray)|[Python](/easy/leetcode53.py)||
 |58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word)|[Python](/easy/leetcode58.py)||
 |62|[不同路径](https://leetcode-cn.com/problems/unique-paths)|[Java](/medium/leetcode62.java)||
