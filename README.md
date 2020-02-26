@@ -28,7 +28,7 @@
 |19|[删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|[Java](/medium/leetcode19.java)||
 |20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses)|[Python](/easy/leetcode20.py)||
 |21|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)|[Python](/easy/leetcode21.py)||
-|22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses)|[Java](/medium/leetcode22.java)||
+|22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses)|[Java](/medium/leetcode22.java)|递归，对于一个情况来说当左括号的数量多于右括号的个数，才可以添加右括号|
 |23|[合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)|[Java](/hard/leetcode23.java)|类似于归并排序中的并，可以使用堆优化，由于是链表，不需要将所有的数一次性读入，可以先读入所有第一个数，然后堆中取出来第一个就是最小的数，构造链表即可。|
 |26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|[Python](/easy/leetcode26.py)||
 |27|[移除元素](https://leetcode-cn.com/problems/remove-element)|[Python](/easy/leetcode27.py)||
@@ -68,6 +68,7 @@
 |119|[杨辉三角2](https://leetcode-cn.com/problems/pascals-triangle-ii/)|[Java](/easy/leetcode119.py)|思路和118一样,获取最后一行|
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)|[Java](/easy/leetcode121.java)||
 |122|[买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)|[Java](/easy/leetcode122.java)||
+|123|[买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)|[Java](/hard/leetcode123.java)|对于这道题，有这么几个状态，天数、交易次数、一天的操作(买，卖，不操作)，枚举所有的状态即可，一组状态下的最大利润可以有前面相关的状态推断得到，状态转移的过程看代码就行了。|
 |125|[验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)|[Java](/easy/leetcode125.java)|字符串模拟|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station)|[Java](/medium/leetcode134.java)||
 |135|[分发糖果](https://leetcode-cn.com/problems/candy/)|[Java](/hard/leetcode135.java)|这题虽然是hard，但是还是很容易1A了。首先从左往右扫描，每当当前位置的rate>前一个位置的rate，那么当前位置的糖果=前一个位置的糖果数+1。否则需要一直向前检查前一个是否符合两者之间分数高的糖果多，直到满足条件为止。|
@@ -82,6 +83,7 @@
 |239|[滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)|[Java](/hard/leetcode239.java)|用一个小顶堆维护，复杂度O(n^logn)|
 |326|[3的幂](https://leetcode-cn.com/problems/power-of-three)|[Java](/easy/leetcode326.java)||
 |344|[反转字符串](https://leetcode-cn.com/problems/reverse-string)|[Java](/easy/leetcode344.java)||
+|361|[轰炸敌人](https://leetcode-cn.com/problems/bomb-enemy/)|[Java](/medium/leetcode361.java)|对于一个方向(假如是一行的从左往右)，dp\[i]\[j]能遇到的怪物=dp\[i]\[j-1]+1(若是怪物)、dp\[i]\[j-1](空的)、0(墙)|
 |405|[数字转换为十六进制数](https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/)|[Java](/easy/leetcode405.java)|利用位运算，使用一个掩码```0xf```来每次截取四位，然后每次循环```num >> 4```，直接计算每四位的16进制表示即可 |
 |413|[等差数列划分](https://leetcode-cn.com/problems/arithmetic-slices)|[Java](/medium/leetcode413.java)||
 |421|[数组中两个数的最大异或值](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|[Java](/medium/leetcode421.java)||
@@ -91,16 +93,20 @@
 |598|[范围求和 II](https://leetcode-cn.com/problems/range-addition-ii)|[Java](/easy/leetcode598.java)||
 |665|[非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/)|[Java](/easy/leetcode665.java)|事实上这道题还算比较麻烦，首先我们扫描数组，对每一个峰值点进行转换，记录转换次数+1，转换的方法有两种，分类讨论即可|
 |684|[冗余连接](https://leetcode-cn.com/problems/redundant-connection)|[Python](/medium/leetcode684.py)||
+|696|[计数二进制子串](https://leetcode-cn.com/problems/count-binary-substrings/)|[Java](/easy/leetcode696.py)|由于0011都是成块出现，所以可以记录上一个出现的字母出现次数pre，和当前出现的字母个数cur，遍历字符串，当pre>=cur，res++|
 |704|[二分查找](https://leetcode-cn.com/problems/binary-search)|[Java](/easy/leetcode704.java)||
+|714|[买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[Java](/medium/leetcode714.java)|类似122、123题|
 |721|[账户合并](https://leetcode-cn.com/problems/accounts-merge/)|[Java](/medium/leetcode721.java)|字节跳动面试题，有一说一，我觉得操作很麻烦。做法是使用并查集，来合并相同的邮件，需要注意的是事实上同一用户的用户名都是一样的，所以在合并后不需要做特判就可以放到同一个TreeSet中|
 |822|[翻转卡片游戏](https://leetcode-cn.com/problems/card-flipping-game/)|[Java](/medium/leetcode822.java)|中等中的简单题，只要得出当正面和反面相同的就不可能是我们需要的数这个结论就可以了，使用一个Set或者数组维护不可能的数的集合，时间复杂度O(n)，空间复杂度O(n)|
 |829|[连续整数求和](https://leetcode-cn.com/problems/consecutive-numbers-sum/)|[Java](/hard/leetcode829.java)|数学性质+动态规划。1个数时，必然有一个数可构成N，2个数若要构成N，第2个数与第1个数差为1，N减掉这个1能整除2则能由商与商+1构成N。3个数若要构成N，第2个数与第1个数差为1，第3个数与第1个数的差为2，N减掉1再减掉2能整除3则能由商、商+1与商+2构成N|
 |830|[较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/)|[Java](/easy/leetcode830.java)|双指针模拟就完事了|
 |832|[翻转图像](https://leetcode-cn.com/problems/flipping-an-image)|[Java](/easy/leetcode832.java)|数据量比较小，直接对于列反向取反模拟即可|
 |852|[山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)|[Java](/easy/leetcode852.java)|先把首位两周没有左右边的特殊判掉，然后再遍历寻找峰顶即可|
+|867|[转置矩阵](https://leetcode-cn.com/problems/transpose-matrix/)|[Java](/easy/leetcode867.java)|入门题|
 |872|[叶子相似的树](https://leetcode-cn.com/problems/leaf-similar-trees)|[Java](/easy/leetcode872.java)||
 |875|[爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas)|[Java](/medium/leetcode875.java)||
 |912|[数组排序](https://leetcode-cn.com/problems/sort-an-array/)|[Java](/medium/leetcode912.java)||
+|929|[独特的电子邮件地址](https://leetcode-cn.com/problems/unique-email-addresses/)|[Java](/easy/leetcode929.java)|模拟题意即可|
 |932|[漂亮数组](https://leetcode-cn.com/problems/beautiful-array)|[Java](/medium/leetcode932.java)||
 |944|[删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)|[Java](/easy/leetcode944.java)|令人自闭的题目描述，其实很简单，删除所有的非严格升序列(原题为降序列)，但是我A了之后还是没搞清楚降序列是什么意思，样例中有一句话，"那么 A 的列 ["b","a","h"] 就不是非降序排列了"，也就是说的\[b,a,h]是降序排列，可是看着显然不是啊|
 |962|[最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp/)|[Java](/medium/leetcode962.java)|(单调栈)首先要明白的就是寻找最靠近左边，和最靠近右边的一个序列对，像这种在数组中求最大/最小长度的问题一般使用单调栈来解决。单调栈的作用对于最长问题来说，就是尽量让最不容易满足条件的左侧压在栈底，然后从右边开始扫描。对于最短问题来说，就是让最容易满足的条件压在栈底，然后从右边开始扫描。|
