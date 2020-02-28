@@ -19,6 +19,7 @@
 |6|[Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion)|[Java](/medium/leetcode6.java)|思维题 + 二维数组滑动|
 |7|[整数反转](https://leetcode-cn.com/problems/reverse-integer)|[Java](/easy/leetcode7.java)|按位截取就完事儿|
 |8|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi)|[Java](/medium/leetcode8.java)|挺烦的一题，思路就是一个大模拟|
+|08.06|[汉诺塔问题](https://leetcode-cn.com/problems/hanota-lcci/)|[Java](/easy/leetcode0806.java)|递归入门题，fix(a, from, tmp, to)= fix(a-1, from, to, tmp) + fix(1 to to) + fix(a-1, tmp, from, to)|
 |9|[回文数](https://leetcode-cn.com/problems/palindrome-number)|[Python](/easy/leetcode9.py)|简单题|
 |11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water)|[Java](/medium/leetcode11.java)|双指针+贪心|
 |13|[罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer)|[Python](/easy/leetcode13.py)|简单思维题|
@@ -41,6 +42,7 @@
 |42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)|[Java](/hard/leetcode42.java)|由题意画图很容易得到，```每格能接到的雨水数量=(min(这格左边最高的格子, 这格右边最高的格子) - 这格的高度)```，对于这样的问题，先用两个数组记录下每格左边（右边）的最大高度即可，我们只需要从左往右扫一遍就可以了。|
 |51|[N皇后](https://leetcode-cn.com/problems/n-queens/)|[Java](/hard/leetcode51.java)|2333之前一直不敢做这题，做了一下发现也不难哈哈哈。经典暴力+回溯模板题|
 |53|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray)|[Python](/easy/leetcode53.py)||
+|54|[螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)|[Java](/medium/leetcode54.java)|这题虽然过了，但是代码写的很丑。思路是就是模拟，在数组中上下左右移动，然后走过的位置堵掉，遇到堵掉的位置，根据当前状态做方向改变。|
 |58|[最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word)|[Python](/easy/leetcode58.py)||
 |62|[不同路径](https://leetcode-cn.com/problems/unique-paths)|[Java](/medium/leetcode62.java)||
 |63|[不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)|[Java](/medium/leetcode63.java)|简单dp```dp[i][j] += dp[i-1][j];dp[i][j] += dp[i][j-1];```|
@@ -49,6 +51,7 @@
 |69|[x 的平方根](https://leetcode-cn.com/problems/sqrtx)|[Python](/easy/leetcode69.py)||
 |70|[爬楼梯](https://leetcode-cn.com/problems/climbing-stairs)|[Python](/easy/leetcode70.py)||
 |72|[编辑距离](https://leetcode-cn.com/problems/edit-distance)|[Java](/hard/leetcode72.java)||
+|77|[组合](https://leetcode-cn.com/problems/combinations/)|[Java](/medium/leetcode77.java)|枚举+回溯，要是已有集合中已经包含该元素，则回溯，否则继续递归|
 |83|[删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list)|[Python](/easy/leetcode83.py)||
 |88|[合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array)|[Java](/easy/leetcode88.java)|从两个数组的尾部开始维护一对双指针，从尾部对比着放|
 |92|[反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii)|[Java](/medium/leetcode92.java)||
@@ -89,11 +92,15 @@
 |421|[数组中两个数的最大异或值](https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array)|[Java](/medium/leetcode421.java)||
 |454|[四数相加 II](https://leetcode-cn.com/problems/4sum-ii)|[Java](/medium/leetcode454.java)||
 |547|[朋友圈](https://leetcode-cn.com/problems/friend-circles)|[Python](/medium/leetcode547.py)||
+|555|[分割连接字符串](https://leetcode-cn.com/problems/split-concatenated-strings/)|[Java](/medium/leetcode555.java)|对于一个字符串中位置确定，其他字符串的顺序逆序选择其实是确定的，明白这一点即可|
 |560|[和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)|[Java](/medium/leetcode560.java)|这题的意思就是需要在区间内找到连续和为k的区间，这其实就是典型的前缀和的应用场景，```prefix[i] = prefix[i-1]+nums[i-1]```，接下来的做法就和two sum的解法一样了|
+|590|[N叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)|[Java](/easy/leetcode590.java)|递归即可，和二叉树的后序遍历一个道理|
 |598|[范围求和 II](https://leetcode-cn.com/problems/range-addition-ii)|[Java](/easy/leetcode598.java)||
 |665|[非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/)|[Java](/easy/leetcode665.java)|事实上这道题还算比较麻烦，首先我们扫描数组，对每一个峰值点进行转换，记录转换次数+1，转换的方法有两种，分类讨论即可|
+|657|[机器人能否返回原点](https://leetcode-cn.com/problems/robot-return-to-origin/)|[Java](/easy/leetcode657.java)|简单模拟|
 |684|[冗余连接](https://leetcode-cn.com/problems/redundant-connection)|[Python](/medium/leetcode684.py)||
 |696|[计数二进制子串](https://leetcode-cn.com/problems/count-binary-substrings/)|[Java](/easy/leetcode696.py)|由于0011都是成块出现，所以可以记录上一个出现的字母出现次数pre，和当前出现的字母个数cur，遍历字符串，当pre>=cur，res++|
+|703|[数据流中的第K大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)|[Java](/easy/leetcode703.java)|小顶堆的应用，维护一个K个元素的小顶堆，当堆满时，当遍历到的元素大于堆顶的元素时，将堆顶元素替换。堆不满时，直接加入堆中|
 |704|[二分查找](https://leetcode-cn.com/problems/binary-search)|[Java](/easy/leetcode704.java)||
 |714|[买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)|[Java](/medium/leetcode714.java)|类似122、123题|
 |721|[账户合并](https://leetcode-cn.com/problems/accounts-merge/)|[Java](/medium/leetcode721.java)|字节跳动面试题，有一说一，我觉得操作很麻烦。做法是使用并查集，来合并相同的邮件，需要注意的是事实上同一用户的用户名都是一样的，所以在合并后不需要做特判就可以放到同一个TreeSet中|
