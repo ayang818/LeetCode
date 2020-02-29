@@ -117,6 +117,7 @@
 |932|[漂亮数组](https://leetcode-cn.com/problems/beautiful-array)|[Java](/medium/leetcode932.java)||
 |944|[删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)|[Java](/easy/leetcode944.java)|令人自闭的题目描述，其实很简单，删除所有的非严格升序列(原题为降序列)，但是我A了之后还是没搞清楚降序列是什么意思，样例中有一句话，"那么 A 的列 ["b","a","h"] 就不是非降序排列了"，也就是说的\[b,a,h]是降序排列，可是看着显然不是啊|
 |962|[最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp/)|[Java](/medium/leetcode962.java)|(单调栈)首先要明白的就是寻找最靠近左边，和最靠近右边的一个序列对，像这种在数组中求最大/最小长度的问题一般使用单调栈来解决。单调栈的作用对于最长问题来说，就是尽量让最不容易满足条件的左侧压在栈底，然后从右边开始扫描。对于最短问题来说，就是让最容易满足的条件压在栈底，然后从右边开始扫描。|
+|986|[区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/)|[Java](/medium/leetcode986.java)|首先将一组区间读入一个队列(双指针)，对于另一组区间，有两种状态，一种是有交集，一种是无交集。无交集的状态很容易表示，所以有交集的状态可以使用无交集取反来表示。取四个数中间的两个数即可。|
 |988|[从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf/)|[Java](/medium/leetcode988.java)|题目意思理解错了。。。以为两个字符串谁短谁就小。事实上不是这样的，一开始自底向上写了一个递归，错在了最后一组数据。后来发现不可行，于是自顶向下写了一个|
 |1018|[可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)|[Java](/easy/leetcode1018.py)||
 |1019|[链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list)|[Java](/medium/leetcode1019.java)||
