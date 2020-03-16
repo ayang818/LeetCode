@@ -1,9 +1,8 @@
 <p align="center">
     <h2 align="center">Ayang818`s LeetCode/NowCoder Solutions</h2>
     <p align="center">Keep Updating!<p>
+    <p align="center"><a href="https://leetcode-cn.com/u/ayang818/" style="text-decoration: none;">My leetcode homepage</a></p>
 </p>
-
-> 不包括数据库和多线程的一些题目，这些虽然也有做，但是打算以后再整理
 
 |ID|Title(Problem link)|Solution|Type|
 |---|---|---|---|
